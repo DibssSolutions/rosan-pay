@@ -1,0 +1,79 @@
+.feature
+  padding: 30px 50px 45px
+  text-align: center
+  background-color: $white
+  position: relative
+  &:after
+    z-index: -1
+    content: ''
+    +coverdiv
+    background-color: $white
+    transition: transform 0.4s
+    transform-origin: center
+    box-shadow: 0 10px 24px -10px rgba($black, 0.09)
+  +hover
+    &:after
+      transform: scale(1.03)
+  &__image
+    display: inline-block
+    +circle(100)
+    position: relative
+    +sm
+      margin-bottom: 4px
+    &_orange
+      background-color: $orange
+    &_blue
+      background-color: $blue
+    &_yellow
+      background-color: $yellow
+    .icon
+      +vcenter
+      color: $white
+    .icon-card
+      font-size: 36px
+    .icon-shield
+      font-size: 50px
+    .icon-touch
+      font-size: 44px
+  &__title-wrapper
+    +flex-center
+    min-height: 66px
+    padding: 5px 0
+    // margin: 0 auto 10px
+
+.features
+  margin-bottom: 40px 
+  +sm 
+    margin-bottom: 16px
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: stretch
+    margin: 0 -10px
+    // +sm 
+    //   margin: 0 auto
+    //   +fadeout($tr)
+    //   &.slick-initialized
+    //     +fadein
+    
+  &__item
+    +flex-size(33.33%)
+    padding: 0 10px
+    // +lg 
+    //   +flex-size(50%)
+    //   margin-bottom: 10px
+    // +sm 
+    //   padding: 0 10px
+    //   height: 100%
+    .feature
+      height: 100%
+  // .slick-track
+  //   display: flex
+  // .slick-slide 
+  //   max-width: 262px
+  //   height: auto
+  //   & > div
+  //     height: 100%
+
+    // .feature
+    //   min-height: 489px

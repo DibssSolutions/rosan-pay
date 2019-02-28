@@ -1,0 +1,10 @@
+{% macro build(props) %}
+  <div class="hero{% if props.small %} hero_small{% endif %}">
+    <div class="hero__inner inner" style='background-image: url(./img/hero_bg.png)'>
+      <div class="hero__content">
+        <h2 class="hero__title hero-title">MEN <br>Collection <br>Preview</h2>
+        <div class="hero__text">dont miss the new look</div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

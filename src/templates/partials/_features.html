@@ -1,0 +1,38 @@
+<div class="features">
+  <div class="features__inner inner">
+    <div class="features__wrapper">
+      {% for feature in [
+          {
+            title: 'Buy & Link to your existing Mastercard',
+            text: 'During the purchase process you can link your existing card to the wearable through secure process of tokenization certified by',
+            icon: 'card',
+            color: 'orange'
+          },
+          {
+            title: 'Touch to pay',
+            text: 'You can pay anywhere where NFC payments are accepted',
+            icon: 'touch',
+            color: 'yellow'
+          },
+          {
+            title: 'Advanced security',
+            text: 'We implement highest security standards. Our devices and our wallet are certified by Mastercard',
+            icon: 'shield',
+            color: 'blue'
+          }
+        ] %}
+        <div class="features__item">
+          <div class="feature">
+            <div class="feature__image feature__image_{{ feature.color }}">
+              {{ mixins.icon(feature.icon) }}
+             </div>
+            <div class="feature__title-wrapper">
+              <h3 class="feature__title title">{{ feature.title }}</h3>
+            </div>
+            <div class="feature__text">{{ feature.text }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,1 +1,61 @@
-<p>Hello from partials/_header.html</p>
+<header class="header js-header">
+  <div class="header__inner inner">
+    <div class="header__wrapper">
+      <div class="header__burger">
+        <div class="burger js-mob-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="header__logo">
+        <a href="/" class="logo">
+          <img class="logo__image" src="./img/logo_with_text.svg" alt="logo"/>
+          <h1 class="logo__text">ROSAN PAY</h1>
+        </a>
+      </div>
+      <div class="header__mob-wrap">
+        <div class="header__nav">
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              {% for item in[
+                {
+                  text: 'Home',
+                  link: 'home'
+                }, {
+                  text: 'Shop',
+                  link: 'shop'
+                }, {
+                  text: 'About us',
+                  link: 'about'
+                }, {
+                  text: 'FAQ',
+                  link: 'faq'
+                }
+              ] %}
+                <li class="main-nav__item">
+                  <a href="{{ item.link }}" class="main-nav__link js-menu-link">
+                    <span>{{ item.text }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+        <div class="header__basket">
+          <a href="#" class="basket-info">
+            <span class="basket-info__icon">{{ mixins.icon('basket') }}</span>
+            <div class="basket-info__quantity">3</div>
+          </a>
+        </div>
+      </div>
+      <div class="header__search">
+        <form action="/" class="search">
+          <input type="text" class="search__input">
+          <button type='button' class="search__button">{{ mixins.icon('search') }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>

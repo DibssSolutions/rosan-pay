@@ -1,0 +1,55 @@
+.search
+  position: relative
+  &__input
+    position: absolute
+    right: 0
+    top: 0
+    +fadeout($tr)
+    max-width: 200px
+    background-color: transparent
+    border-bottom: 1px solid $white
+  &__button
+    display: inline-block
+    background-color: transparent
+    font-size: 0
+    .icon
+      font-size: 12px
+      color: $white
+
+.signup-form
+  position: relative
+  width: 100%
+  &__input
+    width: 100% 
+    border-bottom: 1px solid #e0e0e0
+    background-color: transparent
+    color: $white
+    padding: 10px 60px 10px 0
+    font-family: $montserrat
+    font-size: 12px
+    font-weight: 500
+    line-height: 1.2
+    transition: border-bottom-color $tr
+    +text-overflow
+    &:placeholder
+      color: #a8a6a6
+    &:focus
+      border-bottom-color: $white
+      + .signup-form__btn
+        color: lighten($blue, 10%)
+      // box-shadow: -2px 4px 0 -2px $white
+  &__btn
+    position: absolute
+    right: 0
+    bottom: 10px
+    display: inline-block
+    background-color: transparent
+    color: $blue
+    font-family: $montserrat
+    font-weight: 500
+    font-size: 12px
+    font-weight: 500
+    line-height: 1.2
+    transition: color $tr
+    +hover
+      color: lighten($blue, 10%)
