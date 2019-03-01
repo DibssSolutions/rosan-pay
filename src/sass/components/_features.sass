@@ -1,5 +1,5 @@
 .feature
-  padding: 30px 50px 45px
+  padding: 30px 50px 30px
   text-align: center
   background-color: $white
   position: relative
@@ -10,16 +10,18 @@
     background-color: $white
     transition: transform 0.4s
     transform-origin: center
-    box-shadow: 0 10px 24px -10px rgba($black, 0.09)
+    box-shadow: $lightShadow
   +hover
     &:after
       transform: scale(1.03)
+  &__image-wrapper
+    font-size: 0
+    +sm
+      margin-bottom: 4px
   &__image
     display: inline-block
     +circle(100)
     position: relative
-    +sm
-      margin-bottom: 4px
     &_orange
       background-color: $orange
     &_blue
@@ -42,7 +44,7 @@
     // margin: 0 auto 10px
 
 .features
-  margin-bottom: 40px 
+  margin-bottom: 20px
   +sm 
     margin-bottom: 16px
   &__wrapper
@@ -55,7 +57,6 @@
     //   +fadeout($tr)
     //   &.slick-initialized
     //     +fadein
-    
   &__item
     +flex-size(33.33%)
     padding: 0 10px

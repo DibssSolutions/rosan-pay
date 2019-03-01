@@ -1,0 +1,26 @@
+<div class="samples">
+  <div class="samples__inner inner">
+    <div class="samples__wrapper">
+      <div class="samples__descr">
+        <h3 class="samples__title title">Free Beauty Samples What They Are And How To Find Them</h3>
+        <p>Breast Augmentation Breast Enlargement Medical Tourism In The Philippine</p>
+      </div>
+      <div class="samples__cards">
+        {% for item in [
+          {
+            image: 'card_image_1.png',
+            sale: true
+          },
+          {
+            image: 'card_image_2.png'
+          },
+          {
+            image: 'card_image_3.png'
+          }
+        ] %}
+          {{ mixins.card(item) }}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

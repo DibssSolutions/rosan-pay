@@ -23,9 +23,11 @@
         ] %}
         <div class="features__item">
           <div class="feature">
-            <div class="feature__image feature__image_{{ feature.color }}">
-              {{ mixins.icon(feature.icon) }}
-             </div>
+            <div class="feature__image-wrapper">
+              <div class="feature__image feature__image_{{ feature.color }}">
+                {{ mixins.icon(feature.icon) }}
+              </div>
+            </div>
             <div class="feature__title-wrapper">
               <h3 class="feature__title title">{{ feature.title }}</h3>
             </div>
