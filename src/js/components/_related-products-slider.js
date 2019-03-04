@@ -12,11 +12,13 @@ parent.each((i, el) => {
     slidesToScroll: 1,
     prevArrow: prevButton,
     nextArrow: nextButton,
-    responsive: {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
       }
-    }
+    ]
   });
 });

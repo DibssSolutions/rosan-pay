@@ -15,6 +15,9 @@
     visibility: hidden
     position: absolute
     height: 0
+    &:checked
+      ~ .card__like
+        +fadein
   &__image
     padding-bottom: 100%
     +cover
@@ -37,3 +40,9 @@
     font-size: 20px
     font-weight: 600
     line-height: 1.15
+  &__like
+    position: absolute
+    bottom: 20px
+    right: 20px
+    font-size: 0
+    +fadeout($tr)

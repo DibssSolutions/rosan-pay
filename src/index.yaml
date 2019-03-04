@@ -7,3 +7,5 @@ PageList:
   ready: 50
 - file: shop.html
   ready: 50
+- file: faq.html
+  ready: 50

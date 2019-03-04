@@ -42,7 +42,7 @@
       {% endif %}
       <input type="checkbox">
       {% if props.withLikes %}
-        {{ like() }}
+        <div class="card__like">{{ like() }}</div>
       {% endif %}
     </label>
     <h4 class="card__title title-upper">{{ props.title or 'BODYCON STYLE' }}</h4>
