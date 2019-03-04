@@ -1,0 +1,74 @@
+<div class="product">
+    <div class="product__slider">
+      <div class="product-slider-parent js-slider-parent">
+        {# MAIN SLIDER #}
+        <div class="product-slider js-product-slider">
+          {% for item in [
+            'product-slide-1.png',
+            'Card_image_2.png',
+            'Card_image_3.png',
+            'product-slide-1.png',
+            'product-slide-1.png',
+            'Card_image_2.png',
+            'Card_image_3.png',
+            'product-slide-1.png'
+          ] %}
+            <div class="product-slider__slide" style="background-image: url(./img/{{ item }});">
+              {% if loop.first %}<div class="product-slider__sale-mark">sale</div>{% endif %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="product-slider-bottom">
+          {# NAV-SLIDER #}
+          <div class="product-slider-nav js-product-slider-nav">
+            {% for item in [
+              'Card_image_1.png',
+              'Card_image_2.png',
+              'Card_image_3.png',
+              'Card_image_1.png',
+              'Card_image_1.png',
+              'Card_image_2.png',
+              'Card_image_3.png',
+              'Card_image_1.png'
+            ] %}
+              <div class="product-slider-nav__slide js-st-slider-nav-slide">
+                <img src="./img/{{ item }}" alt="img">
+              </div>
+            {% endfor %}
+          </div>
+          {# NAVIGATION #}
+          <div class="product-slider-nav-controls js-product-slider-nav-controls">
+            <button class="product-slider-nav-controls__prev js-st-slider-nav-prev" type="button">{{ mixins.icon('prev-arrow') }}</button>
+            <button class="product-slider-nav-controls__next js-st-slider-nav-next" type="button">{{ mixins.icon('next-arrow') }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__card">
+      <div class="product-card">
+        <h3 class="product-card__title title-lg">BODYCON STYLE</h3>
+        <div class="product-card__prices">
+          <div class="product-card__current-price">130$</div>
+          <div class="product-card__old-price">130$</div>
+        </div>
+        <div class="product-card__like">
+          {{ mixins.like() }}
+        </div>
+        <div class="product-card__info">
+          <div class="product-code title-upper">
+            <span>sku:</span>
+            <span class="product-code__number">SA1259</span>
+          </div>
+          <div class="product-category">
+            <span>Category:</span>
+            <span class="product-category__category text-orange">men</span>
+          </div>
+        </div>
+        <div class="product-card__descr">What is laser- laser is the concentrated beam of light that is made of a single wavelength. This beam does not scatter light around but focuses it on one point. Therefore the energy emission is very high. In hair removal this laser energy is used to heat and burn the hair follicles. The full name of laser is Light Amplification by Stimulated Emission of Radiation.</div>
+        <div class="product-card__actions">
+          {{ mixins.choose() }}
+          <a href="#" class="btn btn_blue">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>

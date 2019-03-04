@@ -1,0 +1,54 @@
+.subscription
+  margin-bottom: 70px
+  &__wrapper
+    position: relative
+    +clr
+    // display: flex
+  &__image
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 58.4%
+    z-index: -1
+    +sm 
+      position: static
+      width: 100%
+  &__form
+    position: relative
+    float: right
+    margin-left: auto
+    width: 53.5%
+    padding: 44px 0
+    z-index: 2
+    +sm 
+      float: none
+      width: 100%
+
+.logo-card
+  height: 100%
+  width: 100%
+  padding: 30px
+  +flex-center
+  background-color: $darkBlue
+  border-radius: $radius
+  img 
+    min-height: 81px
+
+
+.subscription-card
+  padding: 70px
+  border-radius: $radius
+  background-color: $white
+  box-shadow: $darkShadow
+  text-align: center
+  &__title
+    margin-bottom: 10px
+  &__text
+    margin-bottom: 20px
+    color: #1e194d
+    font-size: 12px
+    font-weight: 500
+  &__form
+    width: 270px
+    display: inline-block

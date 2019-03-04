@@ -20,7 +20,7 @@
   position: relative
   width: 100%
   &__input
-    width: 100% 
+    width: 100%
     border-bottom: 1px solid #e0e0e0
     background-color: transparent
     color: $white
@@ -31,10 +31,14 @@
     line-height: 1.2
     transition: border-bottom-color $tr
     +text-overflow
+    .signup-form_subscr &
+      color: $text
     &:placeholder
       color: #a8a6a6
     &:focus
       border-bottom-color: $white
+      .signup-form_subscr &
+        border-bottom-color: $blackBG
       + .signup-form__btn
         color: lighten($blue, 10%)
       // box-shadow: -2px 4px 0 -2px $white
@@ -53,3 +57,4 @@
     transition: color $tr
     +hover
       color: lighten($blue, 10%)
+

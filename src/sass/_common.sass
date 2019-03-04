@@ -8,3 +8,56 @@
 body
   background: $light
   @extend %baseFont
+
+.bg
+  &-orange
+    background-color: $orange
+  &-blue
+    background-color: $blue
+  &-yellow
+    background-color: $yellow
+  &-extraorange
+    background-color: $extraorange
+
+.text
+  &-orange
+    color: $orange
+  &-blue
+    color: $blue
+  &-yellow
+    color: $yellow
+  &-extraorange
+    color: $extraorange
+
+.breadcrumbs
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  margin-top: 40px
+  flex-wrap: nowrap
+  &__item
+    position: relative
+    white-space: nowrap
+    font-size: 0
+    // +sm
+    // 	
+    // 	font-size: 12px
+    &:not(:first-child)
+      &:before
+        content: "/"
+        display: inline-block
+        @extend .title
+        margin: 0 2px
+        vertical-align: top
+    &:last-child
+    	+text-overflow
+    a
+      @extend .title
+      // +hover
+      // 	color: $white
+    span
+      font-family: $montserrat
+      font-size: 15px
+      font-weight: 600
+      line-height: 1.533
+      color: $blue

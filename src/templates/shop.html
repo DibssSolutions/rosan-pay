@@ -1,0 +1,19 @@
+---
+title: Shop page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  <div class="shop-page">
+    <div class="shop-page__inner inner">
+      {{ mixins.breadcrumbs({
+        list: ['Home', 'Fashion', 'Men', 'One Degree Tee Crossover Black']
+      })}}
+      {% include "partials/_product.html" %}
+      {% include "partials/_related-slider.html" %}
+    </div>
+
+  </div>
+
+{% endblock %}

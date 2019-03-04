@@ -29,18 +29,34 @@
 <!-- end input -->
 {% endmacro %}
 
+{% macro like() %}
+  <div class="like">{{ icon('like') }}</div>
+{% endmacro %}
+
 {% macro card(props) %}
   <div class="card">
-    <div class="card__image-wrapper">
+    <label class="card__image-wrapper">
       <div class="card__image" style='background-image: url(./img/{{ props.image }})'></div>
       {% if props.sale %}
         <div class="card__sale-mark">sale</div>
       {% endif %}
-    </div>
+      <input type="checkbox">
+      {% if props.withLikes %}
+        {{ like() }}
+      {% endif %}
+    </label>
     <h4 class="card__title title-upper">{{ props.title or 'BODYCON STYLE' }}</h4>
     <div class="card__price">{{ props.price or '$130' }}</div>
     <div class="card__button">
       <button class="btn-link" type='button'>Add to cart</button>
     </div>
+  </div>
+{% endmacro %}
+
+{% macro choose() %}
+  <div class="choose js-choose" data-max-number="20">
+    <button class="choose__minus js-choose-minus" type="button">-</button>
+    <input type="text" class="choose__input" value="1" readonly>
+    <button class="choose__plus js-choose-plus" type="button">+</button>
   </div>
 {% endmacro %}

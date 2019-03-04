@@ -1,13 +1,20 @@
 .card
   width: 200px
   text-align: center
+  +sm
+    width: 150px
   &__image-wrapper
+    display: block
     position: relative
     margin-bottom: 20px
     border-radius: $radius
     box-shadow: $darkShadow
     overflow: hidden
-    
+  input[type='checkbox']
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    height: 0
   &__image
     padding-bottom: 100%
     +cover

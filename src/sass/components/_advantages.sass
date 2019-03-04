@@ -1,0 +1,32 @@
+.advantages
+  margin-bottom: 20px
+  &__wrapper
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 0 -8px
+    +sm 
+      flex-direction: column
+      align-items: center
+  &__item
+    +flex-size(33.333%)
+    padding: 0 8px
+    +sm
+      max-width: 400px
+      width: 100%
+      &:not(:last-child)
+        margin-bottom: 12px
+    .advantage
+      height: 100%
+
+.advantage
+  padding: 20px 24px
+  border-radius: $radius
+  text-align: center
+  background-color: $white
+  box-shadow: $lightShadow
+  &__icon
+    display: inline-block
+    margin-bottom: 10px
+    .icon
+      font-size: 35px

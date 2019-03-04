@@ -1,0 +1,34 @@
+<div class="advantages">
+  <div class="advantages__inner inner">
+    <div class="advantages__wrapper">
+      {% for item in [
+        {
+          icon: 'track',
+          title: 'Delivery time',
+          text: 'Enjoy the fast delivery in Europe',
+          modifier: 'blue'
+        },
+        {
+          icon: 'money',
+          title: 'Returns',
+          text: 'You can return the devices <br>in 14 days after receiving',
+          modifier: 'orange'
+        },
+        {
+          icon: 'globe',
+          title: 'Large acceptance network',
+          text: 'Our wearables are accepted at more than X’000’000 locations worldwide',
+          modifier: 'extraorange'
+        }
+      ] %}
+        <div class="advantages__item">
+          <div class="advantage">
+            <div class="advantage__icon text-{{ item.modifier }}">{{ mixins.icon(item.icon) }}</div>
+            <h4 class="advantage__title title text-{{ item.modifier }}">{{ item.title }}</h4>
+            <div class="advantage__text">{{ item.text | safe }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

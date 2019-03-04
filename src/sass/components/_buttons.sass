@@ -10,3 +10,38 @@
   transition: color $tr
   +hover
     color: lighten($blue, 10%)
+
+.btn
+  display: inline-block
+  padding: 13px 80px
+  color: $white
+  font-family: $montserrat
+  font-size: 15px
+  font-weight: 600
+  line-height: 1.533
+  border-radius: $radius
+  transition: background-color $tr, box-shadow $tr, transform $tr
+  &_extraorange
+    background-color: $extraorange
+    +hover
+      background-color: darken($extraorange, 5%)
+      &:active
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        transform: translateY(-1px)
+  &_blue
+    background-color: $blue
+    +hover
+      background-color: darken($blue, 5%)
+      &:active
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        transform: translateY(-1px)
+
+.like
+  +circle(30)
+  background-color: $purple
+  position: relative
+  display: inline-block
+  .icon
+    +vcenter
+    font-size: 8px
+    color: $white

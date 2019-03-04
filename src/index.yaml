@@ -5,3 +5,5 @@ PageList:
   ready: 50
 - file: collections.html
   ready: 50
+- file: shop.html
+  ready: 50
