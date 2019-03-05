@@ -4,6 +4,7 @@
   border-radius: $radius
   background-color: $cardBG
   position: relative
+  backface-visibility: hidden
   &:after
     z-index: -1
     content: ''
@@ -13,6 +14,7 @@
     transition: transform 0.4s
     transform-origin: center
     box-shadow: $lightShadow
+    backface-visibility: hidden
   +hover
     &:after
       transform: scale(1.03)
@@ -21,9 +23,13 @@
     +sm
       margin-bottom: 4px
   &__image
-    display: inline-block
+    display: inline-flex
+    justify-content: center
+    align-items: center
     +circle(100)
     position: relative
+    +md 
+      +circle(60)
     // &_orange
     //   background-color: $orange
     // &_blue
@@ -31,14 +37,19 @@
     // &_yellow
     //   background-color: $yellow
     .icon
-      +vcenter
       color: $white
     .icon-card
       font-size: 36px
+      +md
+        font-size: 24px
     .icon-shield
       font-size: 50px
+      +sm 
+        font-size: 32px
     .icon-touch
       font-size: 44px
+      +md 
+        font-size: 32px
   &__title-wrapper
     +flex-center
     min-height: 66px

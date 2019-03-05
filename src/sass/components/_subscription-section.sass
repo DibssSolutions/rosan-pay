@@ -13,7 +13,9 @@
     z-index: -1
     +sm 
       position: static
+      max-width: 384px
       width: 100%
+      margin: 0 auto
   &__form
     position: relative
     float: right
@@ -24,6 +26,8 @@
     +sm 
       float: none
       width: 100%
+      padding: 0
+      margin-top: -10px
 
 .logo-card
   height: 100%
@@ -32,8 +36,12 @@
   +flex-center
   background-color: $darkBlue
   border-radius: $radius
+  +sm 
+    padding: 20px
   img 
     min-height: 81px
+    +sm 
+      min-height: 40px
 
 
 .subscription-card
@@ -42,6 +50,8 @@
   background-color: $cardBG
   box-shadow: $darkShadow
   text-align: center
+  +sm 
+    padding: 40px 20px
   &__title
     margin-bottom: 10px
   &__text
@@ -50,5 +60,6 @@
     font-size: 12px
     font-weight: 500
   &__form
-    width: 270px
+    max-width: 270px
+    width: 100%
     display: inline-block

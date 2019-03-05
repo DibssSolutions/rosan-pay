@@ -2,24 +2,47 @@
   background-color: $white
   margin-bottom: 20px
   &__inner
+    position: relative
     padding-top: 150px
     padding-bottom: 191px
+    +md
+      padding-top: 100px
+      padding-bottom: 150px
+    +sm
+      text-align: center
+      padding-bottom: 0
+      padding-top: 30px
+    .hero_small &
+      padding-top: 96px
+      padding-bottom: 96px
+  &__bg
+    +coverdiv
+    z-index: 1
     background-size: contain
     background-repeat: no-repeat
     background-position: right top
     +sm 
-      text-align: center
-    .hero_small &
-      padding-top: 96px
-      padding-bottom: 96px
+      position: static
+      width: 100%
+      min-height: 300px
+      background-position: center
+
   &__content
+    position: relative
     display: inline-block
     padding-left: 160px
     text-align: center
+    z-index: 2
+    +md 
+      padding-left: 80px
     +sm 
       padding-left: 0
   &__title
     margin-bottom: 21px
+    +md 
+      margin-bottom: 14px
+    +sm 
+      margin-bottom: 7px
   &__text
     color: $text
     font-size: 18px

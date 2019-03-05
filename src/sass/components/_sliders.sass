@@ -110,14 +110,26 @@
 
 .related-slider
   overflow: hidden
+  // +md 
+  //   overflow: visible
   .slick-slide
     margin-left: 67px
     +md 
-      margin-left: 102px
+      margin-left: 0
+      // padding: 0 15px
+      text-align: center
+      // & > div
+      //   display: inline-block
+      // margin-left: calc((100vw - 650px) / 3)
   .slick-list
     margin-left: -67px
     +md 
-      margin-left: -102px
+      margin-left: 0
+      overflow: visible
+  // .slick-track
+  //   +md
+  //     display: flex
+      // margin-left: calc((100% - 600px) / 3)
     // margin-right: calc((100% - 800px) / 3)
 
 .related-slider-controls

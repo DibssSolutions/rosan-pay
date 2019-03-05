@@ -14,9 +14,19 @@ parent.each((i, el) => {
     nextArrow: nextButton,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 900,
         settings: {
-          slidesToShow: 3
+          // variableWidth: true,
+          slidesToShow: 3,
+          centerMode: true
+          // centerPadding: '40px'
+          
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
         }
       }
     ]
