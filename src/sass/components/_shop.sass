@@ -14,7 +14,7 @@
       height: 100%
 
 .product-card
-  padding: 38px 72px 45px 26px
+  padding: 40px 72px 45px 27px
   background-color: $white
   border-radius: $radius
   &__title
@@ -30,9 +30,9 @@
     color: #e1dddd
     text-decoration: line-through
   &__like
-    margin-bottom: 30px
+    margin-bottom: 24px
   &__info
-    margin-bottom: 28px
+    margin-bottom: 30px
     .product-code,
     .product-category
       +icenter
@@ -60,6 +60,8 @@
   display: inline-flex
   background-color: $light
   border-radius: $radius
+  &_small
+    width: 83px
   &__plus,
   &__minus
     @extend .title-lg
@@ -70,6 +72,9 @@
     background-color: transparent
     padding: 14px 30px
     transition: color 0.4s
+    .choose_small &
+      @extend %baseFont
+      padding: 3px 12px
   &__plus
     +hover 
       color: $orange
@@ -84,9 +89,15 @@
     font-family: $montserrat
     text-align: center
     background-color: transparent
+    .choose_small &
+      @extend %baseFont
+      width: 25px
 
 .product-descr-card
-  padding: 20px
-  margin-bottom: 20px
+  padding: 30px 40px 30px 15px
+  margin-bottom: 33px
   background-color: $white
   border-radius: $radius
+  p 
+    &:not(:last-child)
+      margin-bottom: 22px

@@ -1,7 +1,30 @@
 .faq
-	&__wrapper
-		padding: 50px
+  margin: 40px auto 56px
+  &__title
+    margin-bottom: 21px
+  &__wrapper
+    padding: 42px 42px 42px 34px
+    background-color: $cardBG
+    border-radius: $radius
 
 .accordion
-	&__content
-		display: none
+  &:not(:last-child)
+    margin-bottom: 24px
+  &__trigger
+    display: flex
+    align-items: center
+    margin-bottom: 5px
+  &__trigger-text
+    @extend %baseFont
+    color: $text
+  &__trigger-btn
+    margin-left: 12px
+    transform: rotate(180deg)
+    transition: transform 0.35s
+    .is-open &
+      transform: rotate(0deg)
+  &__content
+    display: none
+    p
+      &:not(:last-child)
+        margin-bottom: 24px

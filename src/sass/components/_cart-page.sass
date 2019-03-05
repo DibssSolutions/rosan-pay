@@ -1,0 +1,147 @@
+.cart-page
+  padding: 32px 0 40px
+  &__title
+    margin-bottom: 20px
+  &__cart
+    margin-bottom: 60px
+
+.cart
+  display: flex
+  +md
+    flex-direction: column
+  &__table
+    +flex-size(67%)
+    +md
+      +flex-size(100%)
+  &__totals
+    flex-grow: 1
+    padding-left: 24px
+    +md 
+      padding-left: 0
+      margin-top: 24px
+
+
+.product-brief
+  display: inline-flex
+  align-items: center
+  margin: 2px 0
+  +sm 
+    margin: 0
+  &__image
+    display: block
+    max-width: 80px
+    max-height: 75px
+  &__name
+    display: inline-block
+    margin-left: 17px
+    @extend .title
+    opacity: 0.5
+
+.cart-table-wrapper
+  padding: 38px 10px 50px 33px
+  border-radius: $radius
+  background-color: $cardBG
+
+.cart-table-title
+  margin-bottom: 24px
+
+.cart-table
+  &__title
+    text-align: left
+    @extend .title-upper
+    &:nth-child(1)
+      width: 40%
+    &:nth-child(2)
+      width: 13%
+      margin-left: 8px
+    &:nth-child(3)
+      width: 17%
+    &:nth-child(4)
+      width: 17%
+    &:nth-child(5)
+  thead
+    +sm 
+      display: none
+  th
+    padding-bottom: 32px
+  tr
+    +sm 
+      border-top: 3px solid $text
+  td
+    text-align: left
+    vertical-align: middle
+    +sm 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 4px 0 
+      text-align: right
+      min-height: 40px
+      &:not(:last-child)
+        border-bottom: 1px solid $text
+      &:last-child
+        margin-bottom: 42px
+      &:before 
+        content: attr(data-label)
+        float: left
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 16px
+  &__price,
+  &__total,
+  &__total input
+    @extend .title-upper
+    color: $mainText
+  &__total input
+    max-width: 60px
+
+.cart-totals
+  padding: 35px 18px 24px 24px
+  border-radius: $radius
+  background-color: $cardBG
+  color: $mainText
+  font-size: 15px
+  font-weight: 600
+  line-height: 1.533
+  &__title
+    margin-bottom: 16px
+  &__row
+    display: flex
+    // align-items: center 
+    // justify-content: space-between
+    // flex-wrap: wrap
+    &:not(:last-child)
+      margin-bottom: 19px
+  &__col
+    &:not(:last-child)
+      margin-bottom: 19px
+  &__left
+    // margin-right: auto
+    +flex-size(110px)
+  &__right
+    // margin-left: auto
+    flex-grow: 1
+  &__subtitle
+    text-transform: uppercase
+    color: $text
+  &__buttons
+    text-align: center
+    .btn:first-child
+      margin-bottom: 16px
+
+.badge
+  display: inline-block
+  max-width: 55px
+  width: 100%
+  padding: 5px 1px
+  text-align: center
+  color: $white
+  font-family: $montserrat
+  font-size: 10px
+  font-weight: 600
+  line-height: 1.2
+  text-transform: uppercase
+  border-radius: $radius
+  &_small-text
+    font-size: 8px
+    line-height: 1.5

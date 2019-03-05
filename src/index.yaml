@@ -9,3 +9,5 @@ PageList:
   ready: 50
 - file: faq.html
   ready: 50
+- file: cart.html
+  ready: 50

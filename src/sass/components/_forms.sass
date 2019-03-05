@@ -58,3 +58,37 @@
     +hover
       color: lighten($blue, 10%)
 
+.adress-form
+  &__label
+    display: block
+    margin-bottom: 13px
+    @extend %title
+    cursor: pointer
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    height: 0
+    &:checked
+      ~ .adress-form__hidden
+        display: block
+  &__field
+    width: 100%
+    &:not(:last-child)
+      margin-bottom: 10px
+  &__hidden
+    display: none
+
+
+.bg-input
+  width: 100%
+  padding: 4px 4px 4px 8px
+  border-radius: $radius
+  background-color: #f7f7f7
+  @extend %title
+  color: $text
+  border: 1px solid #f7f7f7
+  &:placeholder
+    color: $mainText
+  &:focus
+    border: 1px solid $blue

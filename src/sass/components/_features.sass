@@ -1,13 +1,15 @@
 .feature
   padding: 30px 50px 30px
   text-align: center
-  background-color: $white
+  border-radius: $radius
+  background-color: $cardBG
   position: relative
   &:after
     z-index: -1
     content: ''
     +coverdiv
-    background-color: $white
+    border-radius: $radius
+    background-color: $cardBG
     transition: transform 0.4s
     transform-origin: center
     box-shadow: $lightShadow

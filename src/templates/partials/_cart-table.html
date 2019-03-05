@@ -1,0 +1,56 @@
+<div class="cart-table-wrapper">
+  <h3 class="cart-table-title title-lg">cart</h3>
+  <table class="cart-table">
+    <thead>
+      <th>
+        <tr>
+          <th class="cart-table__title">Product</th>
+          <th class="cart-table__title">Link</th>
+          <th class="cart-table__title">Price</th>
+          <th class="cart-table__title">Quantity</th>
+          <th class="cart-table__title">Total</th>
+        </tr>
+      </th>
+    </thead>
+    <tbody>
+      {% for item in [
+        {
+          text: 'link',
+          color: 'blue'
+        },
+        {
+          text: 'linked',
+          color: 'green'
+        },
+        {
+          text: 'not linked',
+          color: 'extraorange'
+        }
+      ] %}
+        <tr class='js-tr-parent'>
+          <td data-label="Product" class="cart-table__product">
+            <div class="product-brief">
+              <img src="./img/Card_image_1.png" alt="product-image" class='product-brief__image'>
+              <span class="product-brief__name">Bodycon Style</span>
+            </div>
+          </td>
+          <td data-label="Link" class="cart-table__link">
+            <div class="badge bg-{{ item.color }}{% if item.color == 'extraorange' %} badge_small-text{% endif %}">{{ item.text }}</div>
+          </td>
+          <td data-label="Price" class="cart-table__price">
+            <span>$<span class='js-tr-price'>120.00</span></span>
+          </td>
+          <td data-label="Quantity" class="cart-table__quantity">
+            {{ mixins.choose({ modifier: 'small' }) }}
+          </td>
+          <td data-label="Total" class="cart-table__total">
+            <span>
+              $<input type='text' class="js-tr-total" value='120.00' readonly>
+              <button class="delete-btn js-tr-delete">{{ mixins.icon('close') }}</button>
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

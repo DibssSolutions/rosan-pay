@@ -3,3 +3,4 @@ import './_related-products-slider';
 import './_choose';
 import './_tabs';
 import './_accordion';
+import './_delete-tr';

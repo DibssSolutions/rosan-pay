@@ -1,0 +1,26 @@
+---
+title: Cart page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  <div class="cart-page">
+    <div class="cart-page__inner inner">
+      <div class="cart-page__title title">Cart</div>
+      <div class="cart-page__cart">
+        <div class="cart">
+          <div class="cart__table">
+            {% include "partials/_cart-table.html" %}
+          </div>
+          <div class="cart__totals">
+            {% include "partials/_cart-totals.html" %}
+          </div>
+        </div>
+      </div>
+      {% include "partials/_related-slider.html" %}
+    </div>
+
+  </div>
+
+{% endblock %}

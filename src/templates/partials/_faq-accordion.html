@@ -1,49 +1,27 @@
 <div class="faq">
   <div class="faq__inner inner">
-		<div class="faq__wrapper">
-      <div class="accordion js-accordion is-open">
-        <a href="#" class="accordion__trigger js-accordion-trigger">
-          <span class="title">Trigger-1</span>
-        </a>
-        <div class="accordion__content js-accordion-wrap">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
-          necessitatibus. Modi, provident excepturi. At aliquam incidunt dolore
-          laboriosam deleniti repudiandae neque officia quaerat quam unde minus,
-          delectus adipisci autem id iusto ipsam. Tempora facere veritatis
-          assumenda iste! Quis officiis ipsa tenetur, exercitationem atque
-          aspernatur corrupti nulla, porro corporis dolorum explicabo nobis
-          quam, soluta perferendis? Architecto aut eum aperiam? Facere nam eaque
-          voluptatibus quam nemo dicta sed adipisci qui odit, cum veritatis
-          doloribus? Excepturi amet ducimus error rerum minima incidunt, sint
-          sequi praesentium pariatur eius fuga asperiores quis at cum unde
-          expedita sit id exercitationem debitis beatae porro consequatur
-          maiores recusandae?
+    <h2 class="faq__title title">FAQ</h2>
+    <div class="faq__wrapper">
+      {% for item in range(0,3) %}
+        <div class="accordion js-accordion{% if loop.first %} is-open{% endif %}">
+          <a href="#" class="accordion__trigger js-accordion-trigger">
+            <span class="accordion__trigger-text">It doesn’t matter if you are a stay at home mom, or a corporate professional.
+            </span>
+            <span class="up-btn accordion__trigger-btn">{{ mixins.icon('up-arrow') }}</span>
+          </a>
+          <div class="accordion__content js-accordion-wrap">
+            <p>
+              It doesn’t matter if you are a stay at home mom, or a corporate professional. You need to keep your appearance at it’s best all the time, and that can be a hard job. But what if you don’t always have the time to go to a Spa for a professional facial? I’ve got just the solution for you.
+            </p>
+            <p>
+              Today, many Spas provide what is know as MicroDermaBrasion. With this technique, a Spa technician exfoliates the dead layers of skin from your face by using a system similar to sandblasting, but on a much, much smaller scale. With the dead layers of skin removed from your face, it now reveals the fresh new skin underneath. This can give you the appearance of a face lift, without the cost or the surgery.
+            </p>
+            <p>
+              Most women who undergo MicroDermaBrasion, find that afterwards their skin is sensitive, irritated, and sometimes swollen. Not to mention a professional Spa treatment takes a appointment, and can cost generally between $150 -$600 dollars. So what can you do for yourself that’s just as effective, is quick, and not expensive at all? It’s called a lemon salt scrub. Here’s what you will need.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="accordion js-accordion">
-        <a href="#" class="accordion__trigger js-accordion-trigger">
-          <span class="title">Trigger-2</span>
-        </a>
-        <div class="accordion__content js-accordion-wrap">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam ipsum nihil quidem iste suscipit fugit repellat non, rem sunt, fugiat quibusdam fuga facilis ipsa ratione dolore laudantium provident consequuntur ex beatae excepturi. Ipsam incidunt nemo, officiis obcaecati magnam aperiam?
-        </div>
-      </div>
-      <div class="accordion js-accordion">
-        <a href="#" class="accordion__trigger js-accordion-trigger">
-          <span class="title">Trigger-3</span>
-        </a>
-        <div class="accordion__content js-accordion-wrap">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero minima quo dolore necessitatibus, unde quod veniam ducimus excepturi aliquam porro exercitationem nulla praesentium accusantium eveniet totam odio vel illo eum impedit. Esse consectetur quibusdam at? Totam ipsam perferendis nobis quod provident eum, esse quia molestias, dolorum debitis ea dignissimos ipsum itaque sequi similique quae vero sint magni? Eos eius nihil hic cupiditate laboriosam quisquam quis! Placeat consequatur harum quis quasi nihil! Vero omnis, dicta beatae pariatur fuga perferendis amet quia esse cum mollitia tempore veniam quasi odio! Similique, debitis dicta. Ipsam doloremque expedita qui doloribus quos ratione rem illum ipsum.
-        </div>
-      </div>
-      <div class="accordion js-accordion">
-        <a href="#" class="accordion__trigger js-accordion-trigger">
-          <span class="title">Trigger-4</span>
-        </a>
-        <div class="accordion__content js-accordion-wrap">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus ipsum nisi, esse facere possimus quod cupiditate aliquid minus neque aperiam ut deserunt debitis quidem placeat! Incidunt, quia tempora ipsum numquam est voluptatem quisquam sapiente officiis reprehenderit consequatur atque, odio rerum dolores nisi! Blanditiis voluptatum possimus tenetur quod cupiditate sit dolore quaerat nostrum ipsa quam, doloremque repellendus, ab voluptatibus quas, cum ratione praesentium eveniet mollitia itaque dolorum rerum. Cupiditate, quae. Saepe neque voluptates aut perspiciatis excepturi dolores tempore exercitationem quam quos fugit labore error a corrupti architecto fuga maxime, distinctio optio magnam iusto sit officia porro, temporibus dolor? Maxime, voluptates perferendis.
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>

@@ -13,7 +13,10 @@
 
 .btn
   display: inline-block
-  padding: 13px 80px
+  padding: 13px 10px
+  max-width: 207px
+  width: 100%
+  text-align: center
   color: $white
   font-family: $montserrat
   font-size: 15px
@@ -35,13 +38,44 @@
       &:active
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
         transform: translateY(-1px)
+  &_orange
+    background-color: $orange
+    +hover
+      background-color: darken($orange, 5%)
+      &:active
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        transform: translateY(-1px)
+  
 
 .like
   +circle(30)
   background-color: $purple
   position: relative
   display: inline-block
+  transition: background-color $tr
   .icon
     +vcenter
     font-size: 8px
     color: $white
+
+.up-btn
+  display: inline-block
+  +vertical
+  +circle(24)
+  font-size: 0
+  background-color: $blue
+  .icon
+    +icenter
+    transform: rotate(90deg)
+    transform-origin: center
+    font-size: 7px
+    color: $white
+
+.delete-btn
+  display: inline-block
+  vertical-align: middle
+  font-size: 0
+  background-color: transparent
+  .icon
+    font-size: 6px
+    color: $text

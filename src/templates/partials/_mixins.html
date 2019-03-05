@@ -53,8 +53,8 @@
   </div>
 {% endmacro %}
 
-{% macro choose() %}
-  <div class="choose js-choose" data-max-number="20">
+{% macro choose(props) %}
+  <div class="choose js-choose{% if props.modifier %} choose_{{ props.modifier }}{% endif %}" data-max-number="20">
     <button class="choose__minus js-choose-minus" type="button">-</button>
     <input type="text" class="choose__input" value="1" readonly>
     <button class="choose__plus js-choose-plus" type="button">+</button>

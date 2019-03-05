@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Shop page</title>
+    <title>Cart page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -82,124 +82,167 @@
           </div>
         </div>
       </header>
-      <div class="shop-page">
-        <div class="shop-page__inner inner">
-          <!-- begin breadcrumbs -->
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a href="#">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="#">Fashion</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="#">Men</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <span>One Degree Tee Crossover Black</span>
-            </li>
-          </ul>
-          <!-- end breadcrumbs -->
-          <div class="product">
-            <div class="product__slider">
-              <div class="product-slider-parent js-slider-parent">
-                <div class="product-slider js-product-slider">
-                  <div class="product-slider__slide" style="background-image: url(./img/product-slide-1.png);">
-                    <div class="product-slider__sale-mark">sale</div>
-                  </div>
-                  <div class="product-slider__slide" style="background-image: url(./img/Card_image_2.png);">
-                  </div>
-                  <div class="product-slider__slide" style="background-image: url(./img/Card_image_3.png);">
-                  </div>
-                  <div class="product-slider__slide" style="background-image: url(./img/product-slide-1.png);">
-                  </div>
-                </div>
-                <div class="product-slider-bottom">
-                  <div class="product-slider-nav js-product-slider-nav">
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/Card_image_1.png" alt="img">
-                    </div>
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/Card_image_2.png" alt="img">
-                    </div>
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/Card_image_3.png" alt="img">
-                    </div>
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/Card_image_1.png" alt="img">
-                    </div>
-                  </div>
-                  <div class="product-slider-nav-controls js-product-slider-nav-controls">
-                    <button class="product-slider-nav-controls__prev js-st-slider-nav-prev" type="button">
-                      <svg class="icon icon-prev-arrow">
-                        <use xlink:href="img/sprite.svg#icon-prev-arrow"></use>
-                      </svg>
-                    </button>
-                    <button class="product-slider-nav-controls__next js-st-slider-nav-next" type="button">
-                      <svg class="icon icon-next-arrow">
-                        <use xlink:href="img/sprite.svg#icon-next-arrow"></use>
-                      </svg>
-                    </button>
-                  </div>
+      <div class="cart-page">
+        <div class="cart-page__inner inner">
+          <div class="cart-page__title title">Cart</div>
+          <div class="cart-page__cart">
+            <div class="cart">
+              <div class="cart__table">
+                <div class="cart-table-wrapper">
+                  <h3 class="cart-table-title title-lg">cart</h3>
+                  <table class="cart-table">
+                    <thead>
+                      <th>
+                        <tr>
+                          <th class="cart-table__title">Product</th>
+                          <th class="cart-table__title">Link</th>
+                          <th class="cart-table__title">Price</th>
+                          <th class="cart-table__title">Quantity</th>
+                          <th class="cart-table__title">Total</th>
+                        </tr>
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr class='js-tr-parent'>
+                        <td data-label="Product" class="cart-table__product">
+                          <div class="product-brief">
+                            <img src="./img/Card_image_1.png" alt="product-image" class='product-brief__image'>
+                            <span class="product-brief__name">Bodycon Style</span>
+                          </div>
+                        </td>
+                        <td data-label="Link" class="cart-table__link">
+                          <div class="badge bg-blue">link</div>
+                        </td>
+                        <td data-label="Price" class="cart-table__price">
+                          <span>$<span class='js-tr-price'>120.00</span></span>
+                        </td>
+                        <td data-label="Quantity" class="cart-table__quantity">
+                          <div class="choose js-choose choose_small" data-max-number="20">
+                            <button class="choose__minus js-choose-minus" type="button">-</button>
+                            <input type="text" class="choose__input" value="1" readonly>
+                            <button class="choose__plus js-choose-plus" type="button">+</button>
+                          </div>
+                        </td>
+                        <td data-label="Total" class="cart-table__total">
+                          <span> $<input type='text' class="js-tr-total" value='120.00' readonly>
+                            <button class="delete-btn js-tr-delete">
+                              <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                              </svg>
+                            </button>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class='js-tr-parent'>
+                        <td data-label="Product" class="cart-table__product">
+                          <div class="product-brief">
+                            <img src="./img/Card_image_1.png" alt="product-image" class='product-brief__image'>
+                            <span class="product-brief__name">Bodycon Style</span>
+                          </div>
+                        </td>
+                        <td data-label="Link" class="cart-table__link">
+                          <div class="badge bg-green">linked</div>
+                        </td>
+                        <td data-label="Price" class="cart-table__price">
+                          <span>$<span class='js-tr-price'>120.00</span></span>
+                        </td>
+                        <td data-label="Quantity" class="cart-table__quantity">
+                          <div class="choose js-choose choose_small" data-max-number="20">
+                            <button class="choose__minus js-choose-minus" type="button">-</button>
+                            <input type="text" class="choose__input" value="1" readonly>
+                            <button class="choose__plus js-choose-plus" type="button">+</button>
+                          </div>
+                        </td>
+                        <td data-label="Total" class="cart-table__total">
+                          <span> $<input type='text' class="js-tr-total" value='120.00' readonly>
+                            <button class="delete-btn js-tr-delete">
+                              <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                              </svg>
+                            </button>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class='js-tr-parent'>
+                        <td data-label="Product" class="cart-table__product">
+                          <div class="product-brief">
+                            <img src="./img/Card_image_1.png" alt="product-image" class='product-brief__image'>
+                            <span class="product-brief__name">Bodycon Style</span>
+                          </div>
+                        </td>
+                        <td data-label="Link" class="cart-table__link">
+                          <div class="badge bg-extraorange badge_small-text">not linked</div>
+                        </td>
+                        <td data-label="Price" class="cart-table__price">
+                          <span>$<span class='js-tr-price'>120.00</span></span>
+                        </td>
+                        <td data-label="Quantity" class="cart-table__quantity">
+                          <div class="choose js-choose choose_small" data-max-number="20">
+                            <button class="choose__minus js-choose-minus" type="button">-</button>
+                            <input type="text" class="choose__input" value="1" readonly>
+                            <button class="choose__plus js-choose-plus" type="button">+</button>
+                          </div>
+                        </td>
+                        <td data-label="Total" class="cart-table__total">
+                          <span> $<input type='text' class="js-tr-total" value='120.00' readonly>
+                            <button class="delete-btn js-tr-delete">
+                              <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                              </svg>
+                            </button>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-            </div>
-            <div class="product__card">
-              <div class="product-card">
-                <h3 class="product-card__title title-lg">BODYCON STYLE</h3>
-                <div class="product-card__prices">
-                  <div class="product-card__current-price">$130</div>
-                  <div class="product-card__old-price">$130</div>
-                </div>
-                <div class="product-card__like">
-                  <div class="like">
-                    <svg class="icon icon-like">
-                      <use xlink:href="img/sprite.svg#icon-like"></use>
-                    </svg>
+              <div class="cart__totals">
+                <div class="cart-totals">
+                  <h3 class="cart-totals__title title-lg">cart totals</h3>
+                  <div class="cart-totals__row">
+                    <div class="cart-totals__left">
+                      <span class="cart-totals__subtitle">subtotal</span>
+                    </div>
                   </div>
-                </div>
-                <div class="product-card__info">
-                  <div class="product-code title-upper">
-                    <span>sku:</span>
-                    <span class="product-code__number">SA1259</span>
+                  <div class="cart-totals__row">
+                    <div class="cart-totals__left">
+                      <span class="cart-totals__subtitle">shipping</span>
+                    </div>
+                    <div class="cart-totals__right">
+                      <div class="cart-totals__col"> Flat rate: $1.00 </div>
+                      <div class="cart-totals__col"> Estimate for Russia. </div>
+                      <div class="adress-form">
+                        <label class="adress-form__label text-blue" for='adress-toggler'> Change address </label>
+                        <input type="checkbox" id='adress-toggler' class="adress-form__checkbox" />
+                        <div class="adress-form__hidden">
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="Russia" />
+                          </div>
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="State / Country" />
+                          </div>
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="City" />
+                          </div>
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="Postcode / ZIP" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="product-category">
-                    <span>Category:</span>
-                    <span class="product-category__category text-orange">men</span>
+                  <div class="cart-totals__row">
+                    <div class="cart-totals__left">
+                      <span class="cart-totals__subtitle">total</span>
+                    </div>
+                    <div class="cart-totals__right text-right">
+                      <span class="cart-totals__subtitle">$121.00</span>
+                    </div>
                   </div>
-                </div>
-                <div class="product-card__descr">What is laser- laser is the concentrated beam of light that is made of a single wavelength. This beam does not scatter light around but focuses it on one point. Therefore the energy emission is very high. In hair removal this laser energy is used to heat and burn the hair follicles. The full name of laser is Light Amplification by Stimulated Emission of Radiation.</div>
-                <div class="product-card__actions">
-                  <div class="choose js-choose" data-max-number="20">
-                    <button class="choose__minus js-choose-minus" type="button">-</button>
-                    <input type="text" class="choose__input" value="1" readonly>
-                    <button class="choose__plus js-choose-plus" type="button">+</button>
-                  </div>
-                  <a href="#" class="btn btn_blue">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-descr-card">
-            <div class="tabs" data-tabs="product-descr">
-              <div class="tabs__out">
-                <div class="tabs__current" data-tabs-current="data-tabs-current"><span></span></div>
-                <ul class="tabs__list inner">
-                  <li class="tabs__item" data-tabs-control="description"> Description </li>
-                  <li class="tabs__item" data-tabs-control="additional-info"> Additional information </li>
-                </ul>
-              </div>
-              <div class="tabs__wrap" data-tabs-wrapper>
-                <div class="tabs__container" data-tabs-container="description">
-                  <div class="tabs__inner inner">
-                    <p> It doesn’t matter if you are a stay at home mom, or a corporate professional. You need to keep your appearance at it’s best all the time, and that can be a hard job. But what if you don’t always have the time to go to a Spa for a professional facial? I’ve got just the solution for you. </p>
-                    <p> Today, many Spas provide what is know as MicroDermaBrasion. With this technique, a Spa technician exfoliates the dead layers of skin from your face by using a system similar to sandblasting, but on a much, much smaller scale. With the dead layers of skin removed from your face, it now reveals the fresh new skin underneath. This can give you the appearance of a face lift, without the cost or the surgery. </p>
-                    <p> Most women who undergo MicroDermaBrasion, find that afterwards their skin is sensitive, irritated, and sometimes swollen. Not to mention a professional Spa treatment takes a appointment, and can cost generally between $150 -$600 dollars. So what can you do for yourself that’s just as effective, is quick, and not expensive at all? It’s called a lemon salt scrub. Here’s what you will need. </p>
-                  </div>
-                </div>
-                <div class="tabs__container" data-tabs-container="additional-info">
-                  <div class="tabs__inner inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis perspiciatis repudiandae laborum fuga corporis at tenetur doloribus totam reiciendis, voluptas est iste vel explicabo sint officiis id dicta! Asperiores delectus atque reprehenderit doloremque tempore qui sequi architecto veritatis, excepturi est porro sint odio reiciendis culpa minus quasi sapiente fugit.</p>
+                  <div class="cart-totals__buttons">
+                    <a href="#" class="btn btn_orange">Add to cart</a>
+                    <a href="#" class="btn btn_blue">Add to cart</a>
                   </div>
                 </div>
               </div>

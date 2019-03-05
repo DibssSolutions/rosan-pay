@@ -7,10 +7,6 @@
             'product-slide-1.png',
             'Card_image_2.png',
             'Card_image_3.png',
-            'product-slide-1.png',
-            'product-slide-1.png',
-            'Card_image_2.png',
-            'Card_image_3.png',
             'product-slide-1.png'
           ] %}
             <div class="product-slider__slide" style="background-image: url(./img/{{ item }});">
@@ -25,13 +21,9 @@
               'Card_image_1.png',
               'Card_image_2.png',
               'Card_image_3.png',
-              'Card_image_1.png',
-              'Card_image_1.png',
-              'Card_image_2.png',
-              'Card_image_3.png',
               'Card_image_1.png'
             ] %}
-              <div class="product-slider-nav__slide js-st-slider-nav-slide">
+              <div class="product-slider-nav__slide">
                 <img src="./img/{{ item }}" alt="img">
               </div>
             {% endfor %}
@@ -48,8 +40,8 @@
       <div class="product-card">
         <h3 class="product-card__title title-lg">BODYCON STYLE</h3>
         <div class="product-card__prices">
-          <div class="product-card__current-price">130$</div>
-          <div class="product-card__old-price">130$</div>
+          <div class="product-card__current-price">$130</div>
+          <div class="product-card__old-price">$130</div>
         </div>
         <div class="product-card__like">
           {{ mixins.like() }}
