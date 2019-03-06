@@ -5,7 +5,9 @@ title: Collections page
 {% import "partials/_hero.html" as hero %}
 
 {% block content %}
-
-  {{ hero.build({ small: true }) }}
-
+  <div class="collections-page">
+    {{ hero.build({ small: true }) }}
+    {% include "partials/_collections.html" %}
+    {% include "partials/_pagination.html" %}
+  </div>
 {% endblock %}

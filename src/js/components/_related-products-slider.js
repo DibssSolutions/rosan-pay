@@ -18,7 +18,7 @@ parent.each((i, el) => {
       {
         breakpoint: 1022,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           variableWidth: true
         }
       }

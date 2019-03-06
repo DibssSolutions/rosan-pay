@@ -1,5 +1,5 @@
 .samples
-  margin-bottom: 40px
+  margin-bottom: 20px
   +md 
     margin-bottom: 10px
   &__wrapper
@@ -14,17 +14,20 @@
     +flex-size(240px)
     text-align: center
     background-image: $mainGradient
+    +md 
+      padding: 64px 28px 24px
     +sm 
       padding: 36px 28px
       +flex-size(100%)
   &__title
     color: $white
+    margin-bottom: 12px
   p
     color: rgba($white, 0.5)
   &__cards
     display: inline-flex
-    // justify-content: space-around
-    justify-content: space-evenly
+    justify-content: center
+    // justify-content: space-evenly
     flex-wrap: wrap
     flex-grow: 1
     padding: 70px 10px 65px
@@ -35,6 +38,6 @@
       // justify-content: space-around
       // align-items: center
   &__card
-    padding: 0 10px
+    padding: 0 20px
     +md 
-      padding: 0 5px
+      padding: 0 15px

@@ -1,0 +1,31 @@
+<div class="collections">
+  <div class="collections__inner inner">
+    <div class="collections__wrapper">
+      {% for item in range(0,2) %}
+        {% for item in [
+          {
+            image: 'card_image_1.png',
+            sale: true,
+            withLikes: true
+          },
+          {
+            image: 'card_image_2.png',
+            withLikes: true
+          },
+          {
+            image: 'card_image_3.png',
+            withLikes: true
+          },
+          {
+            image: 'card_image_3.png',
+            withLikes: true
+          }
+        ] %}
+        <div class="collections__item">
+          {{ mixins.card(item) }}
+        </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -25,6 +25,9 @@ body
   color: rgba($text, 0.5)
   @extend %baseFont
 
+.out
+  overflow: hidden
+
 .bg
   &-orange
     background-color: $orange
@@ -59,7 +62,11 @@ body
   &__item
     position: relative
     white-space: nowrap
-    font-size: 0
+    font-family: $montserrat
+    font-size: 15px
+    font-weight: 600
+    line-height: 1.533
+    color: $blue
     // +sm
     // 	
     // 	font-size: 12px
@@ -68,7 +75,7 @@ body
         content: "/"
         display: inline-block
         @extend .title
-        margin: 0 2px
+        margin: 0 2px 0 3px
         vertical-align: top
     &:last-child
     	+text-overflow
@@ -76,12 +83,6 @@ body
       @extend .title
       // +hover
       // 	color: $white
-    span
-      font-family: $montserrat
-      font-size: 15px
-      font-weight: 600
-      line-height: 1.533
-      color: $blue
 
 .choose
   width: 100%
@@ -113,6 +114,11 @@ body
       padding: 12px 15px 13px
     .choose_small &
       @extend %baseFont
+  &__plus
+    .choose_small &
+      padding: 3px 15px 3px 9px
+  &__minus
+    .choose_small &
       padding: 3px 12px
   &__plus
     +hover 
@@ -133,3 +139,60 @@ body
     .choose_small &
       @extend %baseFont
       width: 25px
+
+.alert-message
+  @extend %card
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 10px
+  padding: 8px 44px 7px 28px
+  +sm 
+    flex-direction: column
+    padding: 16px 20px
+  &__text
+    +sm 
+      margin-bottom: 6px
+      text-align: center
+
+.pagination-container
+  &__wrapper
+    @extend %card
+    padding: 14px 0 21px
+    text-align: center
+
+.pagination
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  &__item
+    padding: 0 10px
+  &__link
+    display: inline-block
+    min-width: 10px
+    @extend .title
+    color: $text
+    position: relative
+    transition: color $tr
+    +hover
+      color: $blue
+    &:after
+      content: ''
+      position: absolute
+      top: 100%
+      left: -2px
+      right: -2px
+      height: 1px
+      background-color: $text
+      +fadeout($tr)
+    &.is-active
+      +hover
+        color: $text
+      &:after
+        +fadein
+  &__arrow
+    margin-left: 8px
+    .icon
+      color: $text
+      font-size: 11px

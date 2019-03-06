@@ -18,14 +18,18 @@
   width: 100%
   text-align: center
   color: $white
-  font-family: $montserrat
-  font-size: 15px
-  font-weight: 600
-  line-height: 1.533
+  @extend %title
   border-radius: $radius
   transition: background-color $tr, box-shadow $tr, transform $tr
-  +md 
+  +md
     max-width: 180px
+  &_sm
+    padding: 3px 19px 4px
+    font-family: $montserrat
+    font-size: 12px
+    font-weight: 600
+    line-height: 1.917
+
   &_extraorange
     background-color: $extraorange
     +hover
@@ -80,5 +84,5 @@
   font-size: 0
   background-color: transparent
   .icon
-    font-size: 6px
+    font-size: 5px
     color: $text

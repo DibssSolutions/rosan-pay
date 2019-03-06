@@ -13,6 +13,7 @@
       justify-content: space-between
   &__logo
     margin-right: auto
+    font-size: 0
     +sm 
       margin-right: 0
   &__mob-wrap
@@ -20,6 +21,8 @@
     align-items: center
     +sm
       position: absolute
+      flex-direction: column
+      align-items: flex-start
       z-index: 20
       top: 0
       left: 0
@@ -31,23 +34,16 @@
       transition: transform $tr, box-shadow $tr
       .is-open &
         transform: translateX(0)
-
   &__burger
     display: none
     position: relative
     z-index: 30
     +sm
       display: block
-      // position: absolute
-      // top: 50%
-      // transform: translateY(-50%)
-      // left: 15px
-  &__logo
-    position: relative
-    z-index: 100
   &__basket
     padding: 0 60px 0 40px
     +sm 
+      padding: 40px 0
 
 
 .main-nav
@@ -56,8 +52,11 @@
     align-items: center
     +sm 
       flex-direction: column
+      align-items: flex-start
   &__item
     padding: 0 40px
+    +md 
+      padding: 0 20px
     +sm
       padding: 20px 0
   &__link
@@ -120,6 +119,8 @@
       +icenter
       color: $white
       font-size: 15px
+      +sm 
+        color: $text
   &__quantity
     text-align: center
     display: inline-block
@@ -128,6 +129,9 @@
     +circle(18)
     background-color: $white
     color: $blackBG
+    +sm 
+      background-color: $blackBG
+      color: $white
 
 .burger
   width: 16px

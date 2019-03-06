@@ -7,23 +7,24 @@
   background-color: $blackBG
   padding: 80px 0
   position: relative
-  +sm 
+  +sm
     padding: 80px 0 40px
   &__wrapper
     font-size: 0
     display: flex
     flex-wrap: wrap
+    position: relative
     +xs
       flex-direction: column
   &__title
     color: $white
-    margin-bottom: 32px
+    margin-bottom: 30px
     +sm 
       margin-bottom: 5px
   &__col
     // display: inline-block
     // width: 25%
-    +flex-size(25%)
+    +flex-size(27.5%)
     vertical-align: top
     +sm 
       +flex-size(50%)
@@ -32,11 +33,13 @@
       +flex-size(100%)
       text-align: center
     &_logo
+      position: absolute
+      right: 0
       text-align: right
       +sm
-        position: absolute
-        top: 40px
-        left: 15px
+        top: -40px
+        left: 0
+        right: auto
         transform: translateY(-50%)
         text-align: left
     p
