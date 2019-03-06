@@ -64,13 +64,15 @@
     color: $white
     font-size: 0
     display: block
+    +sm 
+      color: $text
     +hover
       span:after
         // transform: translateX(0)
         transform: scaleX(1)
         transform-origin: 0 0
     span
-      font-size: 10px
+      font-size: 13px
       line-height: 1.2
       font-weight: 500
       display: inline-block
@@ -127,9 +129,7 @@
     background-color: $white
     color: $blackBG
 
-
-
-.burger 
+.burger
   width: 16px
   height: 12px
   position: relative
@@ -155,6 +155,7 @@
       top: 10px
   .is-open &
     span
+      background-color: $text
       &:nth-child(1) 
         top: 18px
         width: 0%

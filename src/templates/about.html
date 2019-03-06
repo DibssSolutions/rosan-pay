@@ -1,0 +1,35 @@
+---
+title: About page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  <div class="about-page">
+    <div class="about-page__inner inner">
+      <h2 class="about-page__title title">About</h2>
+      <div class="about-page__card">
+        <p>
+          It doesn’t matter if you are a stay at home mom, or a corporate professional. You need to keep your appearance at it’s best all the time, and that can be a hard job. But what if you don’t always have the time to go to a Spa for a professional facial? I’ve got just the solution for you.
+        </p>
+        <p>
+          Today, many Spas provide what is know as MicroDermaBrasion. With this technique, a Spa technician exfoliates the dead layers of skin from your face by using a system similar to sandblasting, but on a much, much smaller scale. With the dead layers of skin removed from your face, it now reveals the fresh new skin underneath. This can give you the appearance of a face lift, without the cost or the surgery.
+        </p>
+        <p>
+          Most women who undergo MicroDermaBrasion, find that afterwards their skin is sensitive, irritated, and sometimes swollen. Not to mention a professional Spa treatment takes a appointment, and can cost generally between $150 -$600 dollars. So what can you do for yourself that’s just as effective, is quick, and not expensive at all? It’s called a lemon salt scrub. Here’s what you will need.
+        </p>
+      </div>
+      <div class="about-page__samples">
+        {% for item in range(0,3) %}
+          <div class="about-page__sample">
+            <div class="sample-image">
+              <div class="sample-image__inner" style='background-image: url(./img/sample-image-big@2x.png)'></div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+{% endblock %}

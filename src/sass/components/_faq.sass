@@ -1,11 +1,12 @@
 .faq
-  margin: 40px auto 56px
+  @extend %_about_faq_pages
   &__title
     margin-bottom: 21px
   &__wrapper
     padding: 42px 42px 42px 34px
-    background-color: $cardBG
-    border-radius: $radius
+    @extend %card
+    +sm 
+      padding: 36px 20px
 
 .accordion
   &:not(:last-child)
@@ -15,12 +16,13 @@
     align-items: center
     margin-bottom: 5px
   &__trigger-text
+    margin-right: 12px
     @extend %baseFont
     color: $text
   &__trigger-btn
-    margin-left: 12px
     transform: rotate(180deg)
     transition: transform 0.35s
+    flex-shrink: 0
     .is-open &
       transform: rotate(0deg)
   &__content

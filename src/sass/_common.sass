@@ -4,6 +4,22 @@
   font-weight: 600
   line-height: 1.917
 
+%card
+  background-color: $cardBG
+  border-radius: $radius
+
+%cardShadow
+  background-color: $cardBG
+  border-radius: $radius
+  transition: box-shadow $tr
+  +hover
+    box-shadow: $darkShadow
+
+%_about_faq_pages
+  padding: 40px 0 56px
+  +sm
+    padding: 30px 0
+
 body
   background: $light
   color: rgba($text, 0.5)
@@ -37,8 +53,8 @@ body
 .breadcrumbs
   display: flex
   align-items: center
-  margin-bottom: 20px
-  margin-top: 40px
+  padding-bottom: 20px
+  padding-top: 40px
   flex-wrap: nowrap
   &__item
     position: relative
@@ -66,3 +82,54 @@ body
       font-weight: 600
       line-height: 1.533
       color: $blue
+
+.choose
+  width: 100%
+  width: 187px
+  vertical-align: top
+  align-items: center
+  text-align: center
+  justify-content: space-between
+  display: inline-flex
+  background-color: $light
+  border-radius: $radius
+  +md
+    width: 120px
+  &_small
+    width: 83px
+    +md
+      width: 83px
+  &__plus,
+  &__minus
+    @extend .title-lg
+    vertical-align: top
+    position: relative
+    color: $text
+    line-height: 1
+    background-color: transparent
+    padding: 12px 30px 13px
+    transition: color 0.4s
+    +md
+      padding: 12px 15px 13px
+    .choose_small &
+      @extend %baseFont
+      padding: 3px 12px
+  &__plus
+    +hover 
+      color: $orange
+  &__minus
+    margin-top: -2px
+    +hover 
+      color: $black
+  &__input
+    display: inline-block
+    width: 46px
+    @extend .title-lg
+    font-family: $montserrat
+    text-align: center
+    background-color: transparent
+    +md 
+      width: 30px
+    .choose_small &
+      @extend %baseFont
+      width: 25px

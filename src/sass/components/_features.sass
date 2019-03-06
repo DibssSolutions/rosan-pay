@@ -5,6 +5,8 @@
   background-color: $cardBG
   position: relative
   backface-visibility: hidden
+  +md
+    padding: 20px
   &:after
     z-index: -1
     content: ''
@@ -44,7 +46,7 @@
         font-size: 24px
     .icon-shield
       font-size: 50px
-      +sm 
+      +md
         font-size: 32px
     .icon-touch
       font-size: 44px
@@ -77,6 +79,7 @@
     +flex-size(33.33%)
     padding: 0 10px
     +sm
+      // +flex-size(100%)
       max-width: 400px
       &:not(:last-child)
         margin-bottom: 12px

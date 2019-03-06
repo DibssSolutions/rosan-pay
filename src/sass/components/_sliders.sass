@@ -1,6 +1,9 @@
 .product-slider-parent
   width: 320px
   position: relative
+  +sm 
+    width: 280px
+    margin: 0 auto
 
 .product-slider
   &__slide
@@ -27,18 +30,24 @@
 .product-slider-bottom
   margin-top: 10px
   position: relative
+  +sm 
+    margin-top: 5px
 
 .product-slider-nav
   display: flex
   height: 75px
   border-radius: $radius
   overflow: hidden
+  +sm 
+    justify-content: center
   &__slide
     min-width: 80px
     background-color: $white
     text-align: center
     position: relative
     font-size: 0
+    +sm 
+      min-width: 70px
     &:after,
     &:before
       content: ''
@@ -110,27 +119,23 @@
 
 .related-slider
   overflow: hidden
-  // +md 
-  //   overflow: visible
+  +md
+    overflow: visible
   .slick-slide
     margin-left: 67px
-    +md 
+    +md
       margin-left: 0
-      // padding: 0 15px
       text-align: center
-      // & > div
-      //   display: inline-block
-      // margin-left: calc((100vw - 650px) / 3)
+      padding: 0 15px
+    +sm
+      padding: 0 10px
   .slick-list
     margin-left: -67px
-    +md 
-      margin-left: 0
+    +md
+      margin-left: -15px
       overflow: visible
-  // .slick-track
-  //   +md
-  //     display: flex
-      // margin-left: calc((100% - 600px) / 3)
-    // margin-right: calc((100% - 800px) / 3)
+    +sm
+      margin-left: -10px
 
 .related-slider-controls
   position: absolute

@@ -19,7 +19,7 @@
     color: $white
     margin-bottom: 32px
     +sm 
-      margin-bottom: 10px
+      margin-bottom: 5px
   &__col
     // display: inline-block
     // width: 25%
@@ -27,7 +27,7 @@
     vertical-align: top
     +sm 
       +flex-size(50%)
-      margin-bottom: 16px
+      margin-bottom: 20px
     +xs
       +flex-size(100%)
       text-align: center
@@ -51,6 +51,9 @@
     &:not(:last-child)
       margin-bottom: 20px
       +sm 
-        margin-bottom: 10px
+        margin-bottom: 5px
   &__link
     @extend %font
+  +sm 
+    br 
+      display: none

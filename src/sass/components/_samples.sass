@@ -1,5 +1,7 @@
 .samples
   margin-bottom: 40px
+  +md 
+    margin-bottom: 10px
   &__wrapper
     display: flex
     border-radius: $radius
@@ -20,14 +22,19 @@
   p
     color: rgba($white, 0.5)
   &__cards
-    display: flex
-    justify-content: space-around
+    display: inline-flex
+    // justify-content: space-around
+    justify-content: space-evenly
     flex-wrap: wrap
     flex-grow: 1
     padding: 70px 10px 65px
-    +md 
-      // justify-content: flex-start
-    +sm 
+    +md
+      padding: 50px 0
+    +sm
       padding: 36px 10px
+      // justify-content: space-around
+      // align-items: center
   &__card
     padding: 0 10px
+    +md 
+      padding: 0 5px

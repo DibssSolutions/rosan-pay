@@ -1,4 +1,6 @@
 import slick from 'slick-carousel';
+import { mediaWidth } from '../utils';
+import { WIN } from '../constants';
 
 const parent = $('.js-related-slider-parent');
 
@@ -14,21 +16,29 @@ parent.each((i, el) => {
     nextArrow: nextButton,
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 1022,
         settings: {
-          // variableWidth: true,
           slidesToShow: 3,
-          centerMode: true
-          // centerPadding: '40px'
-          
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
+          variableWidth: true
         }
       }
     ]
   });
+});
+
+let timeOut;
+let arrayHref = [];
+const sliderIcons = $('.js-related-slider .icon use');
+sliderIcons.each((i, el) => {
+  const atr = $(el).attr('xlink:href');
+  arrayHref.push(atr);
+});
+
+WIN.on('load resize orientationchange', function(e) {
+  clearTimeout(timeOut);
+  timeOut = setTimeout(() => {
+    for (let i = 0; i <= sliderIcons.length - 1; i++) {
+      $(sliderIcons[i]).attr('xlink:href', `${arrayHref[i]}`);
+    }
+  }, 120);
 });

@@ -1,15 +1,24 @@
 .shop-page
+  // margin-top: $headerHeight
   &__inner
     // background-color: $orange
 
 .product
   margin-bottom: 12px
   display: flex
+  +sm 
+    flex-direction: column
+    align-items: center
   &__slider
     +flex-size(320px)
+    +sm 
+      margin-bottom: 24px
+      +flex-size(290px)
   &__card
     flex-grow: 1
     padding-left: 10px
+    +sm 
+      padding-left: 0
     .product-card
       height: 100%
 
@@ -17,6 +26,8 @@
   padding: 40px 72px 45px 27px
   background-color: $white
   border-radius: $radius
+  +md 
+    padding: 30px 20px
   &__title
     margin-bottom: 8px
   &__prices
@@ -31,6 +42,8 @@
     text-decoration: line-through
   &__like
     margin-bottom: 24px
+    +md 
+      margin-bottom: 8px
   &__info
     margin-bottom: 30px
     .product-code,
@@ -50,54 +63,13 @@
   &__category
     text-transform: uppercase
 
-.choose
-  width: 100%
-  width: 187px
-  vertical-align: top
-  align-items: center
-  text-align: center
-  justify-content: space-between
-  display: inline-flex
-  background-color: $light
-  border-radius: $radius
-  &_small
-    width: 83px
-  &__plus,
-  &__minus
-    @extend .title-lg
-    vertical-align: top
-    position: relative
-    color: $text
-    line-height: 1
-    background-color: transparent
-    padding: 14px 30px
-    transition: color 0.4s
-    .choose_small &
-      @extend %baseFont
-      padding: 3px 12px
-  &__plus
-    +hover 
-      color: $orange
-  &__minus
-    margin-top: -2px
-    +hover 
-      color: $black
-  &__input
-    display: inline-block
-    width: 46px
-    @extend .title-lg
-    font-family: $montserrat
-    text-align: center
-    background-color: transparent
-    .choose_small &
-      @extend %baseFont
-      width: 25px
-
 .product-descr-card
   padding: 30px 40px 30px 15px
   margin-bottom: 33px
   background-color: $white
   border-radius: $radius
+  +sm 
+    padding: 30px 20px
   p 
     &:not(:last-child)
       margin-bottom: 22px
