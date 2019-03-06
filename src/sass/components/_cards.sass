@@ -1,4 +1,5 @@
 .card
+  position: relative
   width: 200px
   text-align: center
   +md
@@ -12,15 +13,6 @@
     overflow: hidden
     +md
       margin-bottom: 10px
-  input[type='checkbox']
-    opacity: 0
-    visibility: hidden
-    position: absolute
-    height: 0
-    &:checked
-      ~ .card__like
-        .like
-          background-color: $purple
   &__image
     padding-bottom: 100%
     background-color: $cardBG
@@ -52,9 +44,26 @@
     +md
       margin-bottom: 0
   &__like
+    display: block
     position: absolute
     bottom: 10px
     right: 12px
     font-size: 0
+    cursor: pointer
+    z-index: 5
     .like
       background-color: #e1dddd
+  &__button
+    position: relative
+    z-index: 5
+  &__link
+    +coverdiv
+    z-index: 2
+  input[type='checkbox']
+    opacity: 0
+    visibility: hidden
+    position: absolute
+    height: 0
+    &:checked
+      ~ .like
+        background-color: $purple

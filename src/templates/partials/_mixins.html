@@ -35,16 +35,19 @@
 
 {% macro card(props) %}
   <div class="card">
-    <label class="card__image-wrapper">
+    <a href="#" class="card__link"></a>
+    <div class="card__image-wrapper">
       <div class="card__image" style='background-image: url(./img/{{ props.image }})'></div>
       {% if props.sale %}
         <div class="card__sale-mark">sale</div>
       {% endif %}
-      <input type="checkbox">
       {% if props.withLikes %}
-        <div class="card__like">{{ like() }}</div>
+        <label class="card__like">
+          <input type="checkbox">
+          {{ like() }}
+        </label>
       {% endif %}
-    </label>
+    </div>
     <h4 class="card__title title-upper">{{ props.title or 'BODYCON STYLE' }}</h4>
     <div class="card__price">{{ props.price or '$130' }}</div>
     <div class="card__button">

@@ -29,7 +29,6 @@
     font-size: 12px
     font-weight: 600
     line-height: 1.917
-
   &_extraorange
     background-color: $extraorange
     +hover
@@ -40,10 +39,15 @@
   &_blue
     background-color: $blue
     +hover
-      background-color: darken($blue, 5%)
+      // background-color: darken($blue, 5%)
+      // &:active
+      //   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+      //   transform: translateY(-1px)
+      background-color: $orange
       &:active
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
         transform: translateY(-1px)
+        background-color: darken($orange, 5%)
   &_orange
     background-color: $orange
     +hover

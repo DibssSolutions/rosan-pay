@@ -8,10 +8,14 @@
             <span class="footer-list__link">730 Nestor Landing Suite
               <br>809</span></li>
           <li class="footer-list__item">
-            <a href='tel:+8002540547315' class="footer-list__link">(+800) 254-054-7315</a>
+            <a href='tel:+8002540547315' class="footer-list__link">
+              <span>(+800) 254-054-7315</span>
+            </a>
           </li>
           <li class="footer-list__item">
-            <a href='mailto:Support@PSDGirl.com' class="footer-list__link">Support@PSDGirl.com</a>
+            <a href='mailto:Support@PSDGirl.com' class="footer-list__link">
+              <span>Support@PSDGirl.com</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -40,7 +44,8 @@
             }
           ] %}
             <li class="footer-list__item">
-              <a href="{{ item.link }}" class="footer-list__link">{{ item.text }}</a>
+              <a href="{{ item.link }}" class="footer-list__link">
+                <span>{{ item.text }}</span></a>
             </li>
           {% endfor %}
         </ul>
@@ -50,8 +55,8 @@
         <p>Sign up for Our Newsletter
           <br>& Promotions</p>
         <div class="footer__form">
-          <form action="/" class="signup-form">
-            <input type="text" class="signup-form__input" placeholder="Your email">
+          <form action="/" class="signup-form validation">
+            <input type="text" class="signup-form__input" placeholder="Your email" data-validation="required email">
             <button type='button' class="signup-form__btn">Sign Up</button>
           </form>
         </div>
