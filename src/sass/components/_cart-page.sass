@@ -1,164 +1,77 @@
 .cart-page
-  padding: 25px 0 40px
-  &__title
-    margin-bottom: 20px
-  &__cart
-    margin-bottom: 56px
+  padding-bottom: 65px
 
-.cart
+
+.product
+  margin-bottom: 12px
   display: flex
-  +md
-    flex-direction: column
-  &__table
-    +flex-size(67%)
-    +md
-      +flex-size(100%)
-  &__totals
-    flex-grow: 1
-    padding-left: 24px
-    +md 
-      padding-left: 0
-      margin-top: 24px
-
-.product-brief
-  display: inline-flex
-  align-items: center
-  margin: 2px 0
   +sm 
-    margin: 0
-  &__image
-    display: block
-    max-width: 80px
-    max-height: 75px
+    flex-direction: column
+    align-items: center
+  &__slider
+    +flex-size(320px)
+    overflow: hidden
     +sm 
-      max-width: 40px
-      max-height: 40px
-  &__name
-    display: inline-block
-    margin-left: 23px
-    @extend .title
-    opacity: 0.5
+      margin-bottom: 24px
+      +flex-size(290px)
+  &__card
+    flex-grow: 1
+    padding-left: 10px
     +sm 
-      margin-left: 8px
-      font-size: 12px
+      padding-left: 0
+    .product-card
+      height: 100%
 
-.cart-table-wrapper
-  padding: 39px 10px 20px 30px
+.product-card
+  padding: 40px 72px 45px 27px
+  background-color: $white
   border-radius: $radius
-  background-color: $cardBG
+  +md 
+    padding: 30px 20px
+  &__title
+    margin-bottom: 8px
+  &__prices
+    @extend .title-lg
+    margin-bottom: 18px
+  &__current-price
+    display: inline-block
+    margin-right: 10px
+  &__old-price
+    display: inline-block
+    color: #e1dddd
+    text-decoration: line-through
+  &__like
+    margin-bottom: 24px
+    +md 
+      margin-bottom: 8px
+  &__info
+    margin-bottom: 30px
+    .product-code,
+    .product-category
+      +icenter
+    .product-code
+      margin-right: 30px
+  &__descr
+    margin-bottom: 30px
+  &__actions
+    font-size: 0
+    .choose
+      margin-right: 20px
+      +xs 
+        margin-bottom: 10px
+
+.product-category
+  @extend .title
+  &__category
+    text-transform: uppercase
+
+.product-descr-card
+  padding: 30px 50px 30px 28px
+  margin-bottom: 33px
+  background-color: $white
+  border-radius: $radius
   +sm 
     padding: 30px 20px
-
-.cart-table-title
-  margin-bottom: 10px
-  +sm 
-    margin-bottom: 16px
-
-.cart-table
-  &__title
-    text-align: left
-    @extend .title-upper
-    &:nth-child(1)
-      width: 39.3%
-    &:nth-child(2)
-      width: 13.2%
-      margin-left: 8px
-    &:nth-child(3)
-      width: 15.7%
-    &:nth-child(4)
-      width: 18.5%
-    &:nth-child(5)
-  thead
-    +sm 
-      display: none
-  th
-    padding-bottom: 12px
-  tr
-    +sm 
-      border-top: 3px solid $text
-  td
-    text-align: left
-    vertical-align: middle
-    font-size: 0
-    +sm 
-      display: flex
-      justify-content: space-between
-      align-items: center
-      padding: 4px 0 
-      text-align: right
-      min-height: 40px
-      &:not(:last-child)
-        border-bottom: 1px solid $text
-      &:last-child
-        margin-bottom: 42px
-      &:before 
-        content: attr(data-label)
-        float: left
-        font-weight: bold
-        text-transform: uppercase
-        font-size: 12px
-  &__price span,
-  &__total span,
-  &__total input
-    @extend .title-upper
-    color: $mainText
-  &__total input
-    max-width: 60px
-  .delete-btn
-    margin-top: -3px
-
-.cart-totals
-  padding: 35px 18px 24px 22px
-  border-radius: $radius
-  background-color: $cardBG
-  color: $mainText
-  font-size: 15px
-  font-weight: 600
-  line-height: 1.533
-  &__title
-    margin-bottom: 16px
-  &__row
-    display: flex
-    // align-items: center 
-    // justify-content: space-between
-    // flex-wrap: wrap
-    &_result
-      padding: 7px 3px 0
+  p 
     &:not(:last-child)
-      margin-bottom: 19px
-  &__col
-    &:not(:last-child)
-      margin-bottom: 20px
-  &__left
-    // margin-right: auto
-    +flex-size(110px)
-  &__right
-    // margin-left: auto
-    flex-grow: 1
-  &__subtitle
-    text-transform: uppercase
-    color: $text
-  &__buttons
-    text-align: center
-    // .btn:first-child
-    //   margin-bottom: 16px
-  .adress-form__hidden
-    +xs 
-      margin-left: -110px
-
-.badge
-  display: inline-block
-  max-width: 55px
-  width: 100%
-  padding: 5px 1px
-  text-align: center
-  color: $white
-  font-family: $montserrat
-  font-size: 10px
-  font-weight: 600
-  line-height: 1.2
-  text-transform: uppercase
-  border-radius: $radius
-  &_small-text
-    font-size: 8px
-    line-height: 1.5
+      margin-bottom: 22px

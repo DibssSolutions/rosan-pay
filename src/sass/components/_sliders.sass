@@ -7,7 +7,10 @@
 
 .product-slider
   font-size: 0
+  +fadeout(0.2s)
+  // white-space: nowrap
   &__slide
+    // display: inline-block
     position: relative
     height: 354px
     border-radius: $radius
@@ -39,6 +42,7 @@
   height: 75px
   border-radius: $radius
   overflow: hidden
+  +fadeout(0.2s)
   +sm 
     justify-content: center
   &__slide
@@ -120,6 +124,7 @@
 
 .related-slider
   overflow: hidden
+  +fadeout(0.2s)
   +md
     overflow: visible
   .slick-slide
@@ -153,8 +158,9 @@
     +circle(38)
     position: relative
     font-size: 16px
+    transition: background-color $tr
     +hover
-      opacity: .8
+      background-color: $orange
     &:before
       position: absolute
       content: "" 

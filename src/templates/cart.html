@@ -1,5 +1,5 @@
 ---
-title: Cart page
+title: Shop page
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -7,17 +7,12 @@ title: Cart page
 
   <div class="cart-page">
     <div class="cart-page__inner inner">
-      <div class="cart-page__title title">Cart</div>
-      <div class="cart-page__cart">
-        <div class="cart">
-          <div class="cart__table">
-            {% include "partials/_cart-table.html" %}
-          </div>
-          <div class="cart__totals">
-            {% include "partials/_cart-totals.html" %}
-          </div>
-        </div>
-      </div>
+      {{ mixins.breadcrumbs({
+        list: ['Home', 'Fashion', 'Men', 'One Degree Tee Crossover Black']
+      })}}
+      {% include "partials/_shopping-message.html" %}
+      {% include "partials/_product.html" %}
+      {% include "partials/_product-description.html" %}
       {% include "partials/_related-slider.html" %}
     </div>
 

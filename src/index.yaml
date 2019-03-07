@@ -3,13 +3,17 @@ ProjectTitle: template
 PageList:
 - file: home.html
   ready: 50
-- file: collections.html
-  ready: 50
 - file: shop.html
-  ready: 50
-- file: faq.html
   ready: 50
 - file: cart.html
   ready: 50
+- file: faq.html
+  ready: 50
+- file: basket.html
+  ready: 50
 - file: about.html
+  ready: 50
+- file: customer-service.html
+  ready: 50
+- file: 404.html
   ready: 50

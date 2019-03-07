@@ -9,6 +9,11 @@ parent.each((i, el) => {
   const relatedSlider = $('.js-related-slider', parent);
   const prevButton = $('.js-related-slider-prev', parent);
   const nextButton = $('.js-related-slider-next', parent);
+
+  $(relatedSlider).on('init', function(event, slick) {
+    $(relatedSlider).css({ opacity: '1', visibility: 'visible' });
+  });
+
   relatedSlider.slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -24,6 +29,8 @@ parent.each((i, el) => {
       }
     ]
   });
+
+  
 });
 
 let timeOut;

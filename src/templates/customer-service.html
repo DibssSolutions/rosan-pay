@@ -1,0 +1,28 @@
+---
+title: Customer service page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  <div class="service-page">
+    <div class="service-page__inner inner">
+      <h2 class="service-page__title title">Customer service</h2>
+      <div class="service-page__contacts">
+        <div class="customer-service-card">
+          <p>Our Customer Service Department is at your complete disposal for any questions through Monday till Friday 8:00 till 16:00</p>
+          <div class='customer-service-card__phone'>
+            <a href='tel:+410111111111'><span>T +41 (0) 111 111 111</span></a>
+          </div>
+          <div class='customer-service-card__email'>
+            <a href='mailto:contact@rosanpay.com'><span>contact@rosanpay.com</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="service-page__form">
+        {% include "partials/_contact-form.html" %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

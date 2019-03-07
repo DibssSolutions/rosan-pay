@@ -7,3 +7,4 @@ import './_delete-tr';
 import './_mob-toggler';
 import './_validation';
 import './_calculate-total';
+import './_resize-textarea';

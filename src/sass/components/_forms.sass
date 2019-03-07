@@ -16,31 +16,42 @@
       font-size: 12px
       color: $white
 
-.signup-form
+.signup-form,
+.subscr-form
+  position: relative
+  width: 100%
+
+.input-group
   position: relative
   width: 100%
   &__input
     width: 100%
+    color: $text
     border-bottom: 1px solid #e0e0e0
     background-color: transparent
-    color: $white
-    padding: 10px 60px 10px 0
+    padding: 10px 10px 10px 0
     font-family: $montserrat
     font-size: 12px
     font-weight: 500
     line-height: 1.2
     transition: border-bottom-color $tr
     +text-overflow
-    .signup-form_subscr &
-      color: $text
+    .signup-form &
+      color: $white
+      padding-right: 60px
+    .subscr-form &
+      padding-right: 60px
     &:placeholder
       color: #a8a6a6
     &:focus
-      border-bottom-color: $white
-      .signup-form_subscr &
-        border-bottom-color: $blackBG
-      + .signup-form__btn
-        color: lighten($blue, 10%)
+      border-bottom-color: $blackBG
+      .signup-form &
+        border-bottom-color: $white
+      + .input-group__btn
+        color: $orange
+    &_textarea
+      white-space: pre-wrap
+      padding-right: 60px
     &.error
       border-bottom: 1px solid $extraorange !important
   &__btn
@@ -57,7 +68,16 @@
     line-height: 1.2
     transition: color $tr
     +hover
-      color: lighten($blue, 10%)
+      color: $orange
+
+textarea
+  border: none
+  border-bottom: 1px solid #e0e0e0
+  height: 34px
+  resize: none
+  box-sizing: border-box
+  display: block
+  overflow: hidden
 
 .adress-form
   &__label
@@ -79,7 +99,6 @@
       margin-bottom: 8px
   &__hidden
     display: none
-
 
 .bg-input
   width: 100%
@@ -103,3 +122,26 @@
   font-size: 12px
   font-weight: 400
   line-height: 1.2
+
+.contact-form
+  max-width: 697px
+  width: 100%
+  &__title
+    margin-bottom: 46px
+    color: $text
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    line-height: 1.25
+    text-align: center
+  &__row
+    position: relative
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    &:not(:last-child)
+      margin-bottom: 27px
+  &__col
+    position: relative
+    +flex-size(38.5%)

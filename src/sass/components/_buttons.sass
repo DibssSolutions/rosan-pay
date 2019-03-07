@@ -9,7 +9,7 @@
   line-height: 1.533
   transition: color $tr
   +hover
-    color: lighten($blue, 10%)
+    color: $orange
 
 .btn
   display: inline-block
@@ -73,8 +73,11 @@
   +circle(24)
   font-size: 0
   background-color: $blue
+  transition: background-color $tr
   +sm 
     +circle(18)
+  +hover
+    background-color: $orange
   .icon
     +icenter
     transform: rotate(90deg)
@@ -83,10 +86,23 @@
     color: $white
 
 .delete-btn
+  position: relative
   display: inline-block
   vertical-align: middle
   font-size: 0
   background-color: transparent
+  &:after
+    content: ''
+    position: absolute
+    top: -10px
+    left: -10px
+    right: -10px
+    bottom: -10px
+    background-color: transparent
+  +hover
+    .icon
+      color: $extraorange
   .icon
     font-size: 5px
     color: $text
+    transition: color $tr

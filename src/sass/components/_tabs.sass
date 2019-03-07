@@ -39,15 +39,14 @@
   &__item
     display: block
     padding: 0 10px
-    font-family: $montserrat
-    color: $text
-    font-size: 15px
-    font-weight: 400
-    line-height: 1.533
+    @extend .title
+    color: #8e8ca6
+    transition: color $tr
+    +nosel
     +sm 
       padding: 5px 0
     &.is-active
-      @extend .title
+      color: $text
       +sm 
         opacity: 1
       span:after

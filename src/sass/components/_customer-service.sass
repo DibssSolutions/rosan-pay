@@ -1,0 +1,43 @@
+.service-page
+  padding: 40px 0 86px
+  &__title
+    margin-bottom: 20px
+  &__contacts
+    margin-bottom: 24px
+
+.customer-service-card
+  @extend %card
+  padding: 43px 36px 35px
+  p,
+  div:not(:last-child)
+    margin-bottom: 23px
+  div 
+    font-size: 0
+  a
+    display: inline-block
+    font-size: 0
+    +hover
+      span:after
+        transform: scaleX(1)
+        transform-origin: 0 0
+    span
+      display: inline-block
+      @extend %baseFont
+      position: relative
+      overflow: hidden
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        height: 1px
+        width: 100%
+        background-color: $mainText
+        transform: scaleX(0)
+        transition: transform .4s
+        transform-origin: 100% 0
+
+.contact-form-card
+  @extend %cardShadow
+  padding: 60px 20px 74px
+  +flex-center

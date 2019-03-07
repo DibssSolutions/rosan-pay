@@ -1,21 +1,13 @@
 ---
-title: Shop page
+title: Collections page
 ---
 {% extends "layouts/_layout.html" %}
+{% import "partials/_hero.html" as hero %}
 
 {% block content %}
-
-  <div class="shop-page">
-    <div class="shop-page__inner inner">
-      {{ mixins.breadcrumbs({
-        list: ['Home', 'Fashion', 'Men', 'One Degree Tee Crossover Black']
-      })}}
-      {% include "partials/_shopping-message.html" %}
-      {% include "partials/_product.html" %}
-      {% include "partials/_product-description.html" %}
-      {% include "partials/_related-slider.html" %}
-    </div>
-
+  <div class="collections-page">
+    {{ hero.build({ small: true }) }}
+    {% include "partials/_collections.html" %}
+    {% include "partials/_pagination.html" %}
   </div>
-
 {% endblock %}
