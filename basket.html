@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Collections page</title>
+    <title>Basket page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="header__logo">
-              <a href="/" class="logo">
+              <a href="home.html" class="logo">
                 <img class="logo__image" src="./img/logo_with_text.svg" alt="logo" />
                 <h1 class="logo__text">ROSAN PAY</h1>
               </a>
@@ -41,7 +41,7 @@
                       </a>
                     </li>
                     <li class="main-nav__item">
-                      <a href="shop" class="main-nav__link js-menu-link">
+                      <a href="basket" class="main-nav__link js-menu-link">
                         <span>Shop</span>
                       </a>
                     </li>
@@ -59,7 +59,7 @@
                 </nav>
               </div>
               <div class="header__basket">
-                <a href="#" class="basket-info">
+                <a href="shop.html" class="basket-info">
                   <span class="basket-info__icon">
                     <svg class="icon icon-basket">
                       <use xlink:href="img/sprite.svg#icon-basket"></use>
@@ -82,20 +82,170 @@
           </div>
         </div>
       </header>
-      <div class="collections-page">
-        <div class="hero hero_small">
-          <div class="hero__inner inner">
-            <div class="hero__content">
-              <h2 class="hero__title hero-title">MEN <br>Collection <br>Preview</h2>
-              <div class="hero__text">dont miss the new look</div>
+      <div class="basket-page">
+        <div class="basket-page__inner inner">
+          <div class="basket-page__title title">Cart</div>
+          <div class="basket-page__cart">
+            <div class="cart">
+              <div class="cart__table">
+                <div class="cart-table-wrapper">
+                  <h3 class="cart-table-title title-lg">cart</h3>
+                  <table class="cart-table">
+                    <thead>
+                      <th class="cart-table__title">Product</th>
+                      <th class="cart-table__title">Link</th>
+                      <th class="cart-table__title">Price</th>
+                      <th class="cart-table__title">Quantity</th>
+                      <th class="cart-table__title">Total</th>
+                    </thead>
+                    <tbody>
+                      <tr class='js-tr-parent'>
+                        <td data-label="Product" class="cart-table__product">
+                          <div class="product-brief">
+                            <img src="./img/card_image_3.png" alt="product-image" class='product-brief__image'>
+                            <span class="product-brief__name">Bodycon Style</span>
+                          </div>
+                        </td>
+                        <td data-label="Link" class="cart-table__link">
+                          <div class="badge bg-blue">link</div>
+                        </td>
+                        <td data-label="Price" class="cart-table__price">
+                          <span>$<span class='js-tr-price'>120.00</span></span>
+                        </td>
+                        <td data-label="Quantity" class="cart-table__quantity">
+                          <div class="choose js-choose choose_small" data-max-number="20">
+                            <button class="choose__minus js-choose-minus" type="button">-</button>
+                            <input type="text" class="choose__input" value="1" readonly>
+                            <button class="choose__plus js-choose-plus" type="button">+</button>
+                          </div>
+                        </td>
+                        <td data-label="Total" class="cart-table__total">
+                          <span> $<input type='text' class="js-tr-total" value='120.00' readonly>
+                            <button class="delete-btn js-tr-delete">
+                              <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                              </svg>
+                            </button>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class='js-tr-parent'>
+                        <td data-label="Product" class="cart-table__product">
+                          <div class="product-brief">
+                            <img src="./img/card_image_3.png" alt="product-image" class='product-brief__image'>
+                            <span class="product-brief__name">Bodycon Style</span>
+                          </div>
+                        </td>
+                        <td data-label="Link" class="cart-table__link">
+                          <div class="badge bg-green">linked</div>
+                        </td>
+                        <td data-label="Price" class="cart-table__price">
+                          <span>$<span class='js-tr-price'>120.00</span></span>
+                        </td>
+                        <td data-label="Quantity" class="cart-table__quantity">
+                          <div class="choose js-choose choose_small" data-max-number="20">
+                            <button class="choose__minus js-choose-minus" type="button">-</button>
+                            <input type="text" class="choose__input" value="1" readonly>
+                            <button class="choose__plus js-choose-plus" type="button">+</button>
+                          </div>
+                        </td>
+                        <td data-label="Total" class="cart-table__total">
+                          <span> $<input type='text' class="js-tr-total" value='120.00' readonly>
+                            <button class="delete-btn js-tr-delete">
+                              <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                              </svg>
+                            </button>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr class='js-tr-parent'>
+                        <td data-label="Product" class="cart-table__product">
+                          <div class="product-brief">
+                            <img src="./img/card_image_3.png" alt="product-image" class='product-brief__image'>
+                            <span class="product-brief__name">Bodycon Style</span>
+                          </div>
+                        </td>
+                        <td data-label="Link" class="cart-table__link">
+                          <div class="badge bg-extraorange badge_small-text">not linked</div>
+                        </td>
+                        <td data-label="Price" class="cart-table__price">
+                          <span>$<span class='js-tr-price'>120.00</span></span>
+                        </td>
+                        <td data-label="Quantity" class="cart-table__quantity">
+                          <div class="choose js-choose choose_small" data-max-number="20">
+                            <button class="choose__minus js-choose-minus" type="button">-</button>
+                            <input type="text" class="choose__input" value="1" readonly>
+                            <button class="choose__plus js-choose-plus" type="button">+</button>
+                          </div>
+                        </td>
+                        <td data-label="Total" class="cart-table__total">
+                          <span> $<input type='text' class="js-tr-total" value='120.00' readonly>
+                            <button class="delete-btn js-tr-delete">
+                              <svg class="icon icon-close">
+                                <use xlink:href="img/sprite.svg#icon-close"></use>
+                              </svg>
+                            </button>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="cart__totals">
+                <div class="cart-totals">
+                  <h3 class="cart-totals__title title-lg">cart totals</h3>
+                  <div class="cart-totals__row">
+                    <div class="cart-totals__left">
+                      <span class="cart-totals__subtitle">subtotal</span>
+                    </div>
+                  </div>
+                  <div class="cart-totals__row">
+                    <div class="cart-totals__left">
+                      <span class="cart-totals__subtitle">shipping</span>
+                    </div>
+                    <div class="cart-totals__right">
+                      <div class="cart-totals__col"> Flat rate: $1.00 </div>
+                      <div class="cart-totals__col"> Estimate for Russia. </div>
+                      <div class="adress-form">
+                        <label class="adress-form__label text-blue" for='adress-toggler'> Change address </label>
+                        <input type="checkbox" id='adress-toggler' class="adress-form__checkbox" />
+                        <div class="adress-form__hidden">
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="Russia" />
+                          </div>
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="State / Country" />
+                          </div>
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="City" />
+                          </div>
+                          <div class="adress-form__field">
+                            <input type="text" class="bg-input" placeholder="Postcode / ZIP" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-totals__row cart-totals__row_result">
+                    <div class="cart-totals__left">
+                      <span class="cart-totals__subtitle">total</span>
+                    </div>
+                    <div class="cart-totals__right text-right title-lg"> $<span class="js-total">121.00</span>
+                    </div>
+                  </div>
+                  <div class="cart-totals__buttons">
+                    <a href="#" class="btn btn_blue">Add to cart</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="hero__bg" style='background-image: url(./img/hero_bg.png)'></div>
           </div>
-        </div>
-        <div class="collections">
-          <div class="collections__inner inner">
-            <div class="collections__wrapper">
-              <div class="collections__item">
+          <div class="related-slider-parent js-related-slider-parent">
+            <div class="related-slider-title">Related product</div>
+            <div class="related-slider js-related-slider">
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -117,7 +267,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collections__item">
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -138,7 +288,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collections__item">
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -159,28 +309,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collections__item">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="collections__item">
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -202,7 +331,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collections__item">
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -223,7 +352,7 @@
                   </div>
                 </div>
               </div>
-              <div class="collections__item">
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -244,7 +373,50 @@
                   </div>
                 </div>
               </div>
-              <div class="collections__item">
+              <div class="related-slider__slide">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
+                    <div class="card__sale-mark">sale</div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="related-slider__slide">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="related-slider__slide">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -266,44 +438,17 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="pagination-container">
-          <div class="pagination-container__inner inner">
-            <div class="pagination-container__wrapper">
-              <ul class="pagination">
-                <li class="pagination__item">
-                  <span class="pagination__link is-active">1</span>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">4</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">5</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">6</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">7</a>
-                </li>
-                <li class="pagination__item">
-                  <a href="#" class="pagination__link">8</a>
-                </li>
-                <li class="pagination__arrow">
-                  <a href="#" class="pagination__next">
-                    <svg class="icon icon-pagination-arrow">
-                      <use xlink:href="img/sprite.svg#icon-pagination-arrow"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+            <div class="related-slider-controls js-related-slider-controls">
+              <button class="related-slider-controls__prev js-related-slider-prev" type="button">
+                <svg class="icon icon-prev-arrow">
+                  <use xlink:href="img/sprite.svg#icon-prev-arrow"></use>
+                </svg>
+              </button>
+              <button class="related-slider-controls__next js-related-slider-next" type="button">
+                <svg class="icon icon-next-arrow">
+                  <use xlink:href="img/sprite.svg#icon-next-arrow"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -352,7 +497,7 @@
                     <span>Advanced Search</span></a>
                 </li>
                 <li class="footer-list__item">
-                  <a href="#" class="footer-list__link">
+                  <a href="customer-service.html" class="footer-list__link">
                     <span>Contact us</span></a>
                 </li>
               </ul>
@@ -362,13 +507,15 @@
               <p>Sign up for Our Newsletter <br>& Promotions</p>
               <div class="footer__form">
                 <form action="/" class="signup-form validation">
-                  <input type="text" class="signup-form__input" placeholder="Your email" data-validation="required email">
-                  <button type='button' class="signup-form__btn">Sign Up</button>
+                  <div class="input-group">
+                    <input type="text" class="input-group__input" placeholder="Your email" data-validation="required email">
+                    <button type='submit' class="input-group__btn">Sign Up</button>
+                  </div>
                 </form>
               </div>
             </div>
             <div class="footer__col footer__col_logo">
-              <a href="/" class="logo">
+              <a href="home.html" class="logo">
                 <img class="logo__image" src="./img/logo_with_text.svg" alt="logo" />
                 <h1 class="logo__text">ROSAN PAY</h1>
               </a>

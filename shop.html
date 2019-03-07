@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Shop page</title>
+    <title>Collections page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="header__logo">
-              <a href="/" class="logo">
+              <a href="home.html" class="logo">
                 <img class="logo__image" src="./img/logo_with_text.svg" alt="logo" />
                 <h1 class="logo__text">ROSAN PAY</h1>
               </a>
@@ -41,7 +41,7 @@
                       </a>
                     </li>
                     <li class="main-nav__item">
-                      <a href="shop" class="main-nav__link js-menu-link">
+                      <a href="basket" class="main-nav__link js-menu-link">
                         <span>Shop</span>
                       </a>
                     </li>
@@ -59,7 +59,7 @@
                 </nav>
               </div>
               <div class="header__basket">
-                <a href="#" class="basket-info">
+                <a href="shop.html" class="basket-info">
                   <span class="basket-info__icon">
                     <svg class="icon icon-basket">
                       <use xlink:href="img/sprite.svg#icon-basket"></use>
@@ -82,342 +82,228 @@
           </div>
         </div>
       </header>
-      <div class="shop-page">
-        <div class="shop-page__inner inner">
-          <!-- begin breadcrumbs -->
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs__item">
-              <a href="#">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="#">Fashion</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a href="#">Men</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <span>One Degree Tee Crossover Black</span>
-            </li>
-          </ul>
-          <!-- end breadcrumbs -->
-          <div class="alert-message">
-            <div class="alert-message__text"> “One Degree Tee Crossover Black” has been added to your cart. </div>
-            <div class="alert-message__btn">
-              <a href="#" class="btn btn_blue btn_sm">View cart</a>
+      <div class="collections-page">
+        <div class="hero hero_small">
+          <div class="hero__inner inner">
+            <div class="hero__content">
+              <h2 class="hero__title hero-title">MEN <br>Collection <br>Preview</h2>
+              <div class="hero__text">dont miss the new look</div>
             </div>
+            <div class="hero__bg" style='background-image: url(./img/hero_bg@2x.png)'></div>
           </div>
-          <div class="product">
-            <div class="product__slider">
-              <div class="product-slider-parent js-slider-parent">
-                <div class="product-slider js-product-slider">
-                  <div class="product-slider__slide" style="background-image: url(./img/product-slide-1.png);">
-                    <div class="product-slider__sale-mark">sale</div>
+        </div>
+        <div class="collections">
+          <div class="collections__inner inner">
+            <div class="collections__wrapper">
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
+                    <div class="card__sale-mark">sale</div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
                   </div>
-                  <div class="product-slider__slide" style="background-image: url(./img/card_image_2.png);">
-                  </div>
-                  <div class="product-slider__slide" style="background-image: url(./img/card_image_3.png);">
-                  </div>
-                  <div class="product-slider__slide" style="background-image: url(./img/product-slide-1.png);">
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
                   </div>
                 </div>
-                <div class="product-slider-bottom">
-                  <div class="product-slider-nav js-product-slider-nav">
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/card-image-1.png" alt="img">
-                    </div>
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/card_image_2.png" alt="img">
-                    </div>
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/card_image_3.png" alt="img">
-                    </div>
-                    <div class="product-slider-nav__slide">
-                      <img src="./img/card-image-1.png" alt="img">
-                    </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
                   </div>
-                  <div class="product-slider-nav-controls js-product-slider-nav-controls">
-                    <button class="product-slider-nav-controls__prev js-st-slider-nav-prev" type="button">
-                      <svg class="icon icon-prev-arrow">
-                        <use xlink:href="img/sprite.svg#icon-prev-arrow"></use>
-                      </svg>
-                    </button>
-                    <button class="product-slider-nav-controls__next js-st-slider-nav-next" type="button">
-                      <svg class="icon icon-next-arrow">
-                        <use xlink:href="img/sprite.svg#icon-next-arrow"></use>
-                      </svg>
-                    </button>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
+                    <div class="card__sale-mark">sale</div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                    <label class="card__like">
+                      <input type="checkbox">
+                      <div class="like">
+                        <svg class="icon icon-like">
+                          <use xlink:href="img/sprite.svg#icon-like"></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="product__card">
-              <div class="product-card">
-                <h3 class="product-card__title title-lg">BODYCON STYLE</h3>
-                <div class="product-card__prices">
-                  <div class="product-card__current-price">$130</div>
-                  <div class="product-card__old-price">$130</div>
-                </div>
-                <div class="product-card__like">
-                  <div class="like">
-                    <svg class="icon icon-like">
-                      <use xlink:href="img/sprite.svg#icon-like"></use>
+          </div>
+        </div>
+        <div class="pagination-container">
+          <div class="pagination-container__inner inner">
+            <div class="pagination-container__wrapper">
+              <ul class="pagination">
+                <li class="pagination__item">
+                  <span class="pagination__link is-active">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">5</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">6</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">7</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">8</a>
+                </li>
+                <li class="pagination__arrow">
+                  <a href="#" class="pagination__next">
+                    <svg class="icon icon-pagination-arrow">
+                      <use xlink:href="img/sprite.svg#icon-pagination-arrow"></use>
                     </svg>
-                  </div>
-                </div>
-                <div class="product-card__info">
-                  <div class="product-code title-upper">
-                    <span>sku:</span>
-                    <span class="product-code__number">SA1259</span>
-                  </div>
-                  <div class="product-category">
-                    <span>Category:</span>
-                    <span class="product-category__category text-orange">men</span>
-                  </div>
-                </div>
-                <div class="product-card__descr">What is laser- laser is the concentrated beam of light that is made of a single wavelength. This beam does not scatter light around but focuses it on one point. Therefore the energy emission is very high. In hair removal this laser energy is used to heat and burn the hair follicles. The full name of laser is Light Amplification by Stimulated Emission of Radiation.</div>
-                <div class="product-card__actions">
-                  <div class="choose js-choose" data-max-number="20">
-                    <button class="choose__minus js-choose-minus" type="button">-</button>
-                    <input type="text" class="choose__input" value="1" readonly>
-                    <button class="choose__plus js-choose-plus" type="button">+</button>
-                  </div>
-                  <a href="#" class="btn btn_blue">Add to cart</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-descr-card">
-            <div class="tabs" data-tabs="product-descr">
-              <div class="tabs__out">
-                <div class="tabs__current" data-tabs-current="data-tabs-current"><span></span></div>
-                <ul class="tabs__list">
-                  <li class="tabs__item" data-tabs-control="description"> Description </li>
-                  <li class="tabs__item" data-tabs-control="additional-info"> Additional information </li>
-                </ul>
-              </div>
-              <div class="tabs__wrap" data-tabs-wrapper>
-                <div class="tabs__container" data-tabs-container="description">
-                  <div class="tabs__inner">
-                    <p> It doesn’t matter if you are a stay at home mom, or a corporate professional. You need to keep your appearance at it’s best all the time, and that can be a hard job. But what if you don’t always have the time to go to a Spa for a professional facial? I’ve got just the solution for you. </p>
-                    <p> Today, many Spas provide what is know as MicroDermaBrasion. With this technique, a Spa technician exfoliates the dead layers of skin from your face by using a system similar to sandblasting, but on a much, much smaller scale. With the dead layers of skin removed from your face, it now reveals the fresh new skin underneath. This can give you the appearance of a face lift, without the cost or the surgery. </p>
-                    <p> Most women who undergo MicroDermaBrasion, find that afterwards their skin is sensitive, irritated, and sometimes swollen. Not to mention a professional Spa treatment takes a appointment, and can cost generally between $150 -$600 dollars. So what can you do for yourself that’s just as effective, is quick, and not expensive at all? It’s called a lemon salt scrub. Here’s what you will need. </p>
-                  </div>
-                </div>
-                <div class="tabs__container" data-tabs-container="additional-info">
-                  <div class="tabs__inner">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque omnis perspiciatis repudiandae laborum fuga corporis at tenetur doloribus totam reiciendis, voluptas est iste vel explicabo sint officiis id dicta! Asperiores delectus atque reprehenderit doloremque tempore qui sequi architecto veritatis, excepturi est porro sint odio reiciendis culpa minus quasi sapiente fugit.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="related-slider-parent js-related-slider-parent">
-            <div class="related-slider-title">Related product</div>
-            <div class="related-slider js-related-slider">
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
-                    <div class="card__sale-mark">sale</div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
-                    <div class="card__sale-mark">sale</div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
-                    <div class="card__sale-mark">sale</div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-              <div class="related-slider__slide">
-                <div class="card">
-                  <a href="#" class="card__link"></a>
-                  <div class="card__image-wrapper">
-                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
-                    <label class="card__like">
-                      <input type="checkbox">
-                      <div class="like">
-                        <svg class="icon icon-like">
-                          <use xlink:href="img/sprite.svg#icon-like"></use>
-                        </svg>
-                      </div>
-                    </label>
-                  </div>
-                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
-                  <div class="card__price">$130</div>
-                  <div class="card__button">
-                    <button class="btn-link" type='button'>Add to cart</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="related-slider-controls js-related-slider-controls">
-              <button class="related-slider-controls__prev js-related-slider-prev" type="button">
-                <svg class="icon icon-prev-arrow">
-                  <use xlink:href="img/sprite.svg#icon-prev-arrow"></use>
-                </svg>
-              </button>
-              <button class="related-slider-controls__next js-related-slider-next" type="button">
-                <svg class="icon icon-next-arrow">
-                  <use xlink:href="img/sprite.svg#icon-next-arrow"></use>
-                </svg>
-              </button>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -466,7 +352,7 @@
                     <span>Advanced Search</span></a>
                 </li>
                 <li class="footer-list__item">
-                  <a href="#" class="footer-list__link">
+                  <a href="customer-service.html" class="footer-list__link">
                     <span>Contact us</span></a>
                 </li>
               </ul>
@@ -476,13 +362,15 @@
               <p>Sign up for Our Newsletter <br>& Promotions</p>
               <div class="footer__form">
                 <form action="/" class="signup-form validation">
-                  <input type="text" class="signup-form__input" placeholder="Your email" data-validation="required email">
-                  <button type='button' class="signup-form__btn">Sign Up</button>
+                  <div class="input-group">
+                    <input type="text" class="input-group__input" placeholder="Your email" data-validation="required email">
+                    <button type='submit' class="input-group__btn">Sign Up</button>
+                  </div>
                 </form>
               </div>
             </div>
             <div class="footer__col footer__col_logo">
-              <a href="/" class="logo">
+              <a href="home.html" class="logo">
                 <img class="logo__image" src="./img/logo_with_text.svg" alt="logo" />
                 <h1 class="logo__text">ROSAN PAY</h1>
               </a>
