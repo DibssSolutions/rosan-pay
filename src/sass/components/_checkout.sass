@@ -1,0 +1,28 @@
+.checkout-page
+  padding: 23px 0 153px
+  &__title
+    margin-bottom: 18px 
+
+.checkout-form-card
+  @extend %card
+  padding: 38px 30px 50px
+
+.checkout-form
+  &__title
+      margin-bottom: 24px 
+  &__row
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 -23px
+  &__col
+    position: relative
+    +flex-size(25%)
+    padding: 0 23px
+    margin-bottom: 20px
+    +md 
+      +flex-size(50%)
+    +sm 
+      +flex-size(100%)
+    &_wide
+      +flex-size(50%)

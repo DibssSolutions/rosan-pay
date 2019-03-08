@@ -1,0 +1,62 @@
+---
+title: Checkout page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+  <div class="checkout-page">
+    <div class="checkout-page__inner inner">
+      <h2 class="checkout-page__title title">Checkout</h2>
+      <div class="checkout-page__form">
+        <div class="checkout-form-card">
+          <form class="checkout-form validation">
+            <h3 class="checkout-form__title title-lg">Checkout</h3>
+            <div class="checkout-form__row">
+              <div class="checkout-form__col">
+                <div class="input-group">
+                  <input type="text" class="input-group__input" placeholder="First name *" data-validation="required"/>
+                </div>
+              </div>
+              <div class="checkout-form__col">
+                <input type="text" class="input-group__input" placeholder="Last name *" data-validation="required"/>
+              </div>
+              <div class="checkout-form__col">
+                <div class="input-group">
+                  <input type="text" class="input-group__input" placeholder="First name" data-validation="required"/>
+                </div>
+              </div>
+              <div class="checkout-form__col">
+                <div class="input-group">
+                  <input type="text" class="input-group__input" placeholder="First name" data-validation="required"/>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-form__row">
+              <div class="checkout-form__col checkout-form__col_wide">
+                  <div class="input-group">
+                    <input type="text" class="input-group__input" placeholder="Company name (optional)"/>
+                  </div>
+              </div>
+            </div>
+            <div class="checkout-form__row">
+              <div class="checkout-form__col checkout-form__col_wide">
+                <div class="input-group">
+                  <input type="text" class="input-group__input" placeholder="Country *" data-validation="required" />
+                </div>
+              </div>
+            </div>
+            <div class="checkout-form__row">
+              <div class="checkout-form__col checkout-form__col_wide">
+                <div class="input-group">
+                  <input type="text" class="input-group__input" placeholder="Street adress *" data-validation="required" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

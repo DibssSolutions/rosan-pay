@@ -122,6 +122,8 @@ textarea
   font-size: 12px
   font-weight: 400
   line-height: 1.2
+  .checkout-form__col &
+    left: 23px
 
 .contact-form
   max-width: 697px
@@ -134,6 +136,10 @@ textarea
     text-transform: uppercase
     line-height: 1.25
     text-align: center
+    +md 
+      margin-bottom: 36px
+    +sm 
+      margin-bottom: 24px
   &__row
     position: relative
     display: flex
@@ -145,3 +151,7 @@ textarea
   &__col
     position: relative
     +flex-size(38.5%)
+    +sm 
+      +flex-size(100%)
+      &:not(:last-child)
+        margin-bottom: 27px
