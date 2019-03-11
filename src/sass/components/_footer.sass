@@ -8,7 +8,7 @@
   padding: 80px 0
   position: relative
   +sm
-    padding: 80px 0 40px
+    padding: 80px 0 20px
   &__wrapper
     font-size: 0
     display: flex
@@ -55,7 +55,8 @@
       +sm 
         margin-bottom: 5px
   &__link
-    @extend %font
+    display: block
+    font-size: 0
     +hover
       span:after
         transform: scaleX(1)
@@ -63,6 +64,7 @@
     span
       display: inline-block
       position: relative
+      @extend %font
       overflow: hidden
       &:after
         content: ''

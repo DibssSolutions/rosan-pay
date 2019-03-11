@@ -1,5 +1,8 @@
 .faq
   @extend %_about_faq_pages
+  min-height: calc(100vh - 500px)
+  +sm 
+    min-height: initial
   &__title
     margin-bottom: 21px
   &__wrapper
@@ -16,7 +19,7 @@
     align-items: center
     margin-bottom: 5px
   &__trigger-text
-    margin-right: 12px
+    margin-right: 15px
     @extend %baseFont
     color: $text
   &__trigger-btn
