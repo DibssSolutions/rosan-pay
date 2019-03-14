@@ -9,7 +9,8 @@ accordeons.each(function() {
   if (that.hasClass(OPEN)) {
     thatAccordeonWrap.show();
   }
-  accordeonTrigger.on('click', () => {
+  accordeonTrigger.on('click', e => {
+    e.preventDefault();
     if (!that.hasClass(OPEN)) {
       accordeons.removeClass(OPEN);
       accordeonsWrap.slideUp(350);
@@ -18,6 +19,6 @@ accordeons.each(function() {
     } else {
       that.removeClass(OPEN);
       thatAccordeonWrap.slideUp(350);
-  	}
+    }
   });
 });

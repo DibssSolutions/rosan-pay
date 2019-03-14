@@ -152,6 +152,27 @@ textarea
     position: relative
     +flex-size(38.5%)
     +sm 
-      +flex-size(100%)
+      flex: 0 0 100%
+      max-width: 100%
       &:not(:last-child)
         margin-bottom: 27px
+
+
+// CHANGE DEFAULT SELECT2 STYLING
+.select2-container .select2-selection--single .select2-selection__rendered
+  @extend .bg-input
+
+.select2-selection.select2-selection--single
+  border: 1px solid #f7f7f7
+
+.select2-container .select2-selection--single
+  height: auto
+
+.select2-dropdown
+  background-color: #f7f7f7
+
+.select2-container--open .select2-dropdown--below
+  border-top: 1px solid #aaa
+
+.select2-container--default .select2-results__option--highlighted[aria-selected]
+  background-color: $blue

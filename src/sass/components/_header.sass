@@ -12,10 +12,11 @@
     +sm
       justify-content: space-between
   &__logo
-    margin-right: auto
+    // margin-right: auto
+    flex-grow: 1
     font-size: 0
-    +sm 
-      margin-right: 0
+    +sm
+      text-align: center
   &__mob-wrap
     display: flex
     align-items: center
@@ -25,15 +26,14 @@
       align-items: flex-start
       z-index: 20
       top: 0
-      left: 0
+      right: 101%
       min-height: 100vh
       min-width: 200px
       padding: 147px 50px 40px 
-      transform: translateX(-101%)
       background-color: $white
       transition: transform $tr, box-shadow $tr
       .is-open &
-        transform: translateX(0)
+        transform: translateX(101%)
   &__burger
     display: none
     position: relative
@@ -91,6 +91,8 @@
         transform: scaleX(0)
         transition: transform .4s
         transform-origin: 100% 0
+        +sm 
+          background-color: $text
 
 .logo
   display: inline-block

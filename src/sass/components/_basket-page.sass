@@ -140,10 +140,16 @@
     color: $text
   &__buttons
     text-align: center
-    // .btn:first-child
-    //   margin-bottom: 16px
+  &__button
+    &:not(:first-child)
+      margin-top: 16px
+    .btn
+      +md 
+        max-width: 300px
+      +sm
+        max-width: 180px
   .adress-form__hidden
-    +xs 
+    +xs
       margin-left: -110px
 
 .badge

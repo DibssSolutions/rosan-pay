@@ -280,8 +280,12 @@
     letter-spacing: ($letter-spacing / 1000) + em
     
 =flex-size($val)
-  flex: 0 0 $val
-  min-width: $val
+  @if $val != 100%
+    flex: 0 0 $val
+    max-width: $val
+  @else
+    flex: 0 0 auto
+    max-width: 100%
   
 =fadeout($tr)
   opacity: 0

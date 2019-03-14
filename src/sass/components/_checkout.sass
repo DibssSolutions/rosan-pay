@@ -1,11 +1,15 @@
 .checkout-page
   padding: 23px 0 153px
+  +sm 
+    padding: 23px 0 60px
   &__title
     margin-bottom: 18px 
 
 .checkout-form-card
   @extend %card
   padding: 38px 30px 50px
+  +sm 
+    padding: 40px 20px
 
 .checkout-form
   &__title
@@ -23,6 +27,7 @@
     +md 
       +flex-size(50%)
     +sm 
-      +flex-size(100%)
+      flex: 0 0 100% 
+      max-width: 100%
     &_wide
       +flex-size(50%)
