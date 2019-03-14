@@ -213,7 +213,14 @@
                         <input type="checkbox" id='adress-toggler' class="adress-form__checkbox" />
                         <div class="adress-form__hidden">
                           <div class="adress-form__field">
-                            <input type="text" class="bg-input" placeholder="Russia" />
+                            <select name="country" id="country" class='js-select'>
+                              <option value="Ukraine">Ukraine</option>
+                              <option value="Russia">Russia</option>
+                              <option value="Poland">Poland</option>
+                              <option value="Greece">Greece</option>
+                              <option value="Germany">Germany</option>
+                            </select>
+                            <!-- <input type="text" class="bg-input" placeholder="Russia" /> -->
                           </div>
                           <div class="adress-form__field">
                             <input type="text" class="bg-input" placeholder="State / Country" />
@@ -236,7 +243,12 @@
                     </div>
                   </div>
                   <div class="cart-totals__buttons">
-                    <a href="#" class="btn btn_blue">Add to cart</a>
+                    <div class="cart-totals__button">
+                      <a href="#" class="btn btn_blue">Add to cart</a>
+                    </div>
+                    <div class="cart-totals__button">
+                      <a href="#" class="btn btn_orange">Update cart</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -460,7 +472,7 @@
               <h2 class="footer__title title-upper">Contact us</h2>
               <ul class="footer-list">
                 <li class="footer-list__item">
-                  <span class="footer-list__link">
+                  <span class="footer-list__link footer-list__link_no-hover">
                     <span>730 Nestor Landing Suite <br>809</span>
                   </span>
                 </li>
