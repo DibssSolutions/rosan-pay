@@ -5,19 +5,19 @@
   &__wrapper 
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
-    margin: 0 -15px
-    +md
-      justify-content: center
-  &__item
-    padding: 0 15px 50px
+    // justify-content: space-between
+    // margin: 0 -15px
+    margin: 0 -35px
     +md 
-      +flex-size(25%)
-      text-align: center
-      padding: 0 15px 25px
-      .card
-        display: inline-block
-    +sm 
+      margin: 0 -15px
+  &__item
+    +flex-size(25%)
+    padding: 0 15px 50px
+    text-align: center
+    .card
+      display: inline-block
+    +md
       +flex-size(180px)
+      padding: 0 15px 25px
     +xs
       +flex-size(100%)
