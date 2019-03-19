@@ -44,9 +44,20 @@
     color: #e1dddd
     text-decoration: line-through
   &__like
+    position: relative
     margin-bottom: 24px
     +md 
       margin-bottom: 8px
+    .like
+      background-color: #e1dddd
+    input[type='checkbox']
+      opacity: 0
+      visibility: hidden
+      position: absolute
+      height: 0
+      &:checked
+        ~ .like
+          background-color: $purple
   &__info
     margin-bottom: 30px
     .product-code,
