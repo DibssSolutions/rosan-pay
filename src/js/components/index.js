@@ -9,3 +9,4 @@ import './_validation';
 import './_calculate-total';
 import './_resize-textarea';
 import './_initSelect';
+import './_tooltip';

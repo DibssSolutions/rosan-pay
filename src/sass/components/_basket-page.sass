@@ -102,10 +102,17 @@
   &__total input
     @extend .title-upper
     color: $mainText
-  &__total input
-    max-width: 60px
+  &__total 
+    & > span
+      display: flex
+      align-items: center
+      justify-content: space-between
+    input
+      max-width: 60px
   .delete-btn
-    margin-top: -3px
+    margin: 0 10px 0 5px
+    +sm
+      margin-right: 0
 
 .cart-totals
   padding: 35px 18px 24px 22px

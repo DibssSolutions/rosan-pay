@@ -4,6 +4,9 @@
   text-align: center
   +md
     width: 150px
+  +hover
+    .card__image
+      transform: scale(1.1)
   &__image-wrapper
     display: block
     position: relative
@@ -17,6 +20,8 @@
     padding-bottom: 100%
     background-color: $cardBG
     +cover
+    transition: transform .3s ease-in-out
+    transform-origin: center center
   &__sale-mark
     display: inline-block
     padding: 4px 7px
@@ -43,6 +48,8 @@
     line-height: 1.15
     +md
       margin-bottom: 0
+    *
+      text-decoration: none
   &__like
     display: block
     position: absolute
@@ -67,3 +74,47 @@
     &:checked
       ~ .like
         background-color: $purple
+  
+.card-tooltip
+  position: absolute
+  bottom: 0
+  z-index: 10
+  padding: 30px 20px 10px
+  left: 50%
+  margin-left: -115px
+  width: 230px
+  font-size: 15px 
+  font-weight: 600 
+  line-height: 1.5
+  border: 1px solid #191818 
+  border-radius: 5px
+  background-color: $white 
+  +md
+    width: 180px
+    margin-left: -90px
+  &__close
+    position: absolute
+    top: 13px
+    right: 10px
+    font-size: 0
+    color: #1E194D 
+    transition: color .3s
+    background-color: transparent
+    &:before
+      position: absolute
+      content: "" 
+      top: -8px
+      right: -8px
+      bottom: -8px
+      left: -8px
+    +hover
+      color: #f5881f 
+    .icon
+      font-size: 9px
+  &__footer
+    margin-top: 12px
+  &__btn
+    transition: color .3s
+    color: #4D87C6 
+    +hover
+      color: #f5881f 

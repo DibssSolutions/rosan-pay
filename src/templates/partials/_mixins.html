@@ -41,25 +41,37 @@
       {% if props.sale %}
         <div class="card__sale-mark">sale</div>
       {% endif %}
-      {% if props.withLikes %}
+      {# {% if props.withLikes %}
         <label class="card__like">
           <input type="checkbox">
           {{ like() }}
         </label>
-      {% endif %}
+      {% endif %} #}
     </div>
     <h4 class="card__title title-upper">{{ props.title or 'BODYCON STYLE' }}</h4>
     <div class="card__price">{{ props.price or '$130' }}</div>
     <div class="card__button">
       <button class="btn-link" type='button'>Add to cart</button>
     </div>
+    {% if props.tooltip %}
+    <div class="card-tooltip js-tooltip">
+      <button class="card-tooltip__close js-tooltip-remove" type="button">{{ icon('close-sm') }}</button>
+      <div class="card-tooltip__text">
+        <p>Bodycon Style</p>
+        <p>Product has been added to cart!</p>
+      </div>
+      <div class="card-tooltip__footer">
+        <a href="#" class="card-tooltip__btn">View cart</a>
+      </div>
+    </div>
+    {% endif %}
   </div>
 {% endmacro %}
 
 {% macro choose(props) %}
   <div class="choose js-choose{% if props.modifier %} choose_{{ props.modifier }}{% endif %}" data-max-number="20">
     <button class="choose__minus js-choose-minus" type="button">-</button>
-    <input type="text" class="choose__input" value="1" readonly>
+    <input type="number" class="choose__input" value="1" readonly>
     <button class="choose__plus js-choose-plus" type="button">+</button>
   </div>
 {% endmacro %}

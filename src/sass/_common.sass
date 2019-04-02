@@ -22,6 +22,7 @@
 
 body
   background: $light
+  min-width: 320px
   color: rgba($text, 0.5)
   @extend %baseFont
 
@@ -132,11 +133,18 @@ body
   &__input
     display: inline-block
     vertical-align: middle
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
     width: 46px
     @extend .title-lg
     font-family: $montserrat
     text-align: center
     background-color: transparent
+    &[type=number]::-webkit-inner-spin-button, 
+    &[type=number]::-webkit-outer-spin-button
+      -webkit-appearance: none
+      margin: 0
     +md 
       width: 30px
     .choose_small &
