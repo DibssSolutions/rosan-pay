@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Home page</title>
+    <title>Search</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -82,75 +82,23 @@
           </div>
         </div>
       </header>
-      <div class="hero">
-        <div class="hero__inner inner">
-          <div class="hero__content">
-            <h2 class="hero__title hero-title">MEN <br>Collection <br>Preview</h2>
-            <div class="hero__text">dont miss the new look</div>
-          </div>
-          <div class="hero__bg" style='background-image: url(./img/hero_bg@2x.png)'></div>
-        </div>
-      </div>
-      <div class="features">
-        <div class="features__inner inner">
-          <div class="features__wrapper">
-            <div class="features__item">
-              <div class="feature">
-                <div class="feature__image-wrapper">
-                  <div class="feature__image bg-orange">
-                    <svg class="icon icon-card">
-                      <use xlink:href="img/sprite.svg#icon-card"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="feature__title-wrapper">
-                  <h3 class="feature__title title">Buy &amp; Link to your existing Mastercard</h3>
-                </div>
-                <div class="feature__text">During the purchase process you can link your existing card to the wearable through secure process of tokenization certified by</div>
+      <div class="collections-page">
+        <!-- begin main-search -->
+        <div class="main-search">
+          <div class="main-search__inner">
+            <form action="/" class="signup-form">
+              <div class="input-group">
+                <input type="text" class="input-group__input" placeholder="Search here…">
+                <button type="submit" class="input-group__btn">Search</button>
               </div>
-            </div>
-            <div class="features__item">
-              <div class="feature">
-                <div class="feature__image-wrapper">
-                  <div class="feature__image bg-yellow">
-                    <svg class="icon icon-touch">
-                      <use xlink:href="img/sprite.svg#icon-touch"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="feature__title-wrapper">
-                  <h3 class="feature__title title">Touch to pay</h3>
-                </div>
-                <div class="feature__text">You can pay anywhere where NFC payments are accepted</div>
-              </div>
-            </div>
-            <div class="features__item">
-              <div class="feature">
-                <div class="feature__image-wrapper">
-                  <div class="feature__image bg-blue">
-                    <svg class="icon icon-shield">
-                      <use xlink:href="img/sprite.svg#icon-shield"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="feature__title-wrapper">
-                  <h3 class="feature__title title">Advanced security</h3>
-                </div>
-                <div class="feature__text">We implement highest security standards. Our devices and our wallet are certified by Mastercard</div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="samples">
-        <div class="samples__inner inner">
-          <div class="samples__wrapper">
-            <div class="samples__descr">
-              <h3 class="samples__title title">Free Beauty Samples What They Are And How To Find Them</h3>
-              <p>Breast Augmentation Breast Enlargement Medical Tourism In The Philippine</p>
-            </div>
-            <div class="samples__cards">
-              <div class="samples__card">
+        <!-- end main-search -->
+        <div class="collections">
+          <div class="collections__inner inner">
+            <div class="collections__wrapper">
+              <div class="collections__item">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -164,7 +112,7 @@
                   </div>
                 </div>
               </div>
-              <div class="samples__card">
+              <div class="collections__item">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -175,9 +123,103 @@
                   <div class="card__button">
                     <button class="btn-link" type='button'>Add to cart</button>
                   </div>
+                  <div class="card-tooltip js-tooltip">
+                    <button class="card-tooltip__close js-tooltip-remove" type="button">
+                      <svg class="icon icon-close-sm">
+                        <use xlink:href="img/sprite.svg#icon-close-sm"></use>
+                      </svg>
+                    </button>
+                    <div class="card-tooltip__text">
+                      <p>Bodycon Style</p>
+                      <p>Product has been added to cart!</p>
+                    </div>
+                    <div class="card-tooltip__footer">
+                      <a href="#" class="card-tooltip__btn">View cart</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="samples__card">
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card-image-1.png)'></div>
+                    <div class="card__sale-mark">sale</div>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_2.png)'></div>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                  <div class="card-tooltip js-tooltip">
+                    <button class="card-tooltip__close js-tooltip-remove" type="button">
+                      <svg class="icon icon-close-sm">
+                        <use xlink:href="img/sprite.svg#icon-close-sm"></use>
+                      </svg>
+                    </button>
+                    <div class="card-tooltip__text">
+                      <p>Bodycon Style</p>
+                      <p>Product has been added to cart!</p>
+                    </div>
+                    <div class="card-tooltip__footer">
+                      <a href="#" class="card-tooltip__btn">View cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
+                <div class="card">
+                  <a href="#" class="card__link"></a>
+                  <div class="card__image-wrapper">
+                    <div class="card__image" style='background-image: url(./img/card_image_3.png)'></div>
+                  </div>
+                  <h4 class="card__title title-upper">BODYCON STYLE</h4>
+                  <div class="card__price">$130</div>
+                  <div class="card__button">
+                    <button class="btn-link" type='button'>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="collections__item">
                 <div class="card">
                   <a href="#" class="card__link"></a>
                   <div class="card__image-wrapper">
@@ -193,85 +235,42 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="availability">
-        <div class="availability__inner inner">
-          <div class="availability__icon-wrapper">
-            <div class="availability__icon bg-extraorange">
-              <svg class="icon icon-building">
-                <use xlink:href="img/sprite.svg#icon-building"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="availability__wrapper">
-            <h3 class="availability__title title"> Check if your bank is available </h3>
-            <div class='availability__text'>We are currently working on onboarding as many banks as possible. You can check the list of the banks we work with here</div>
-            <div class="availability__btn">
-              <a href="#" class="btn btn_extraorange">Check</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="advantages">
-        <div class="advantages__inner inner">
-          <div class="advantages__wrapper">
-            <div class="advantages__item">
-              <div class="advantage">
-                <div class="advantage__icon text-blue">
-                  <svg class="icon icon-track">
-                    <use xlink:href="img/sprite.svg#icon-track"></use>
-                  </svg>
-                </div>
-                <h4 class="advantage__title title text-blue">Delivery time</h4>
-                <div class="advantage__text">Enjoy the fast delivery in Europe</div>
-              </div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantage">
-                <div class="advantage__icon text-orange">
-                  <svg class="icon icon-money">
-                    <use xlink:href="img/sprite.svg#icon-money"></use>
-                  </svg>
-                </div>
-                <h4 class="advantage__title title text-orange">Returns</h4>
-                <div class="advantage__text">You can return the devices <br>in 14 days after receiving</div>
-              </div>
-            </div>
-            <div class="advantages__item">
-              <div class="advantage">
-                <div class="advantage__icon text-extraorange">
-                  <svg class="icon icon-globe">
-                    <use xlink:href="img/sprite.svg#icon-globe"></use>
-                  </svg>
-                </div>
-                <h4 class="advantage__title title text-extraorange">Large acceptance network</h4>
-                <div class="advantage__text">Our wearables are accepted at more than X’000’000 locations worldwide</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="subscription">
-        <div class="subscription__inner inner">
-          <div class="subscription__wrapper">
-            <div class="subscription__image">
-              <div class="logo-card">
-                <img src="./img/logo_with_text.svg" alt="">
-              </div>
-            </div>
-            <div class="subscription__form">
-              <div class="subscription-card">
-                <h3 class="subscription-card__title title-lg">Newsletter</h3>
-                <div class="subscription-card__text">Sign up for Our Newsletter & Promotions</div>
-                <div class="subscription-card__form">
-                  <form action="/" class="subscr-form validation">
-                    <div class="input-group">
-                      <input type="text" class="input-group__input" placeholder="Your email" data-validation="required email">
-                      <button type='submit' class="input-group__btn">Sign Up</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+        <div class="pagination-container">
+          <div class="pagination-container__inner inner">
+            <div class="pagination-container__wrapper">
+              <ul class="pagination">
+                <li class="pagination__item">
+                  <span class="pagination__link is-active">1</span>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">5</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">6</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">7</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">8</a>
+                </li>
+                <li class="pagination__arrow">
+                  <a href="#" class="pagination__next">
+                    <svg class="icon icon-pagination-arrow">
+                      <use xlink:href="img/sprite.svg#icon-pagination-arrow"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

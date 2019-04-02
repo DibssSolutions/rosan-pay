@@ -1,0 +1,24 @@
+---
+title: Search
+---
+{% extends "layouts/_layout.html" %}
+{% import "partials/_hero.html" as hero %}
+
+{% block content %}
+  <div class="collections-page">
+    <!-- begin main-search -->
+    <div class="main-search">
+    	<div class="main-search__inner">
+    		<form action="/" class="signup-form">
+    		  <div class="input-group">
+    		    <input type="text" class="input-group__input" placeholder="Search here…">
+    		    <button type="submit" class="input-group__btn">Search</button>
+    		  </div>
+    		</form>
+    	</div>
+    </div>
+    <!-- end main-search -->
+    {% include "partials/_collections.html" %}
+    {% include "partials/_pagination.html" %}
+  </div>
+{% endblock %}

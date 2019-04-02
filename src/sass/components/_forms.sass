@@ -39,7 +39,7 @@
   &__input
     width: 100%
     color: $text
-    border-bottom: 1px solid #e0e0e0
+    border-bottom: 1px solid #E0E0E0
     background-color: transparent
     padding: 10px 10px 10px 0
     font-family: $montserrat
@@ -53,14 +53,16 @@
       padding-right: 60px
     .subscr-form &
       padding-right: 60px
-    &:placeholder
-      color: #a8a6a6
+    &::placeholder
+      color: #A8A6A6
     &:focus
       border-bottom-color: $blackBG
       .signup-form &
         border-bottom-color: $white
       + .input-group__btn
         color: $orange
+      &::placeholder
+        font-size: 0
     &_textarea
       white-space: pre-wrap
       padding-right: 60px

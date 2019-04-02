@@ -19,3 +19,5 @@ PageList:
   ready: 50
 - file: checkout.html
   ready: 50
+- file: search.html
+  ready: 50
