@@ -103,14 +103,20 @@
     @extend .title-upper
     color: $mainText
   &__total 
+    // +prevent-text 
+    
     & > span
       display: flex
       align-items: center
       justify-content: space-between
+      span
+        display: block
+        max-width: 86px 
+        +text-overflow
     input
       max-width: 60px
   .delete-btn
-    margin: 0 10px 0 5px
+    margin: 0 5px
     +sm
       margin-right: 0
 
