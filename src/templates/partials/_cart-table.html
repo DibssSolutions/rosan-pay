@@ -11,7 +11,7 @@
     <tbody>
       {% for item in [
         {
-          text: 'link',
+          text: 'link <span class="mob-inline">card</span>',
           color: 'blue'
         },
         {
@@ -31,7 +31,7 @@
             </div>
           </td>
           <td data-label="Link" class="cart-table__link">
-            <div class="badge bg-{{ item.color }}{% if item.color == 'extraorange' %} badge_small-text{% endif %}">{{ item.text }}</div>
+            <a{% if loop.first %} data-type="iframe" data-fancybox href="https://www.dev-manage-mii.uk/ecommerce?clientId=e927b68a-b06a-480a-b83a-e40b32e8b62a&brand=rosan diamond&model=money_clip&version=1"{% endif %} class="badge bg-{{ item.color }}{% if item.color == 'extraorange' %} badge_small-text{% endif %}">{{ item.text | safe }}</a>
           </td>
           <td data-label="Price" class="cart-table__price">
             <span>$<span class='js-tr-price'>120.00</span></span>

@@ -1,6 +1,6 @@
 %baseFont
   font-family: $montserrat
-  font-size: 12px
+  font-size: 13px
   font-weight: 600
   line-height: 1.917
 
@@ -216,3 +216,19 @@ body
       color: $text
       font-size: 11px
       transition: color $tr
+
+.sm-hide
+  +sm
+    display: none !important
+
+.mob-inline
+    display: none !important
+    +sm
+      display: inline !important
+
+.fancybox-slide--iframe
+  .fancybox-content
+    max-width: 850px
+    background: transparent
+    iframe
+      width: 100%

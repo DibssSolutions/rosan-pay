@@ -5,12 +5,12 @@ title: Home page
 {% import "partials/_hero.html" as hero %}
 
 {% block content %}
-
-  {{ hero.build() }}
-  {% include "partials/_features.html" %}
-  {% include "partials/_samples.html" %}
-  {% include "partials/_availability.html" %}
-  {% include "partials/_advantages.html" %}
-  {% include "partials/_subscription-section.html" %}
-
+<div class="main-wrap">
+	{{ hero.build() }}
+	{% include "partials/_features.html" %}
+	{% include "partials/_samples.html" %}
+	{% include "partials/_availability.html" %}
+	{% include "partials/_advantages.html" %}
+	{% include "partials/_subscription-section.html" %}
+</div>
 {% endblock %}

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Basket page</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/app.css">
@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="header__logo">
-              <a href="home.html" class="logo">
+              <a href="/" class="logo">
                 <img class="logo__image" src="./img/logonew.svg" alt="logo" />
                 <h1 class="logo__text">ROSAN PAY</h1>
               </a>
@@ -107,7 +107,7 @@
                           </div>
                         </td>
                         <td data-label="Link" class="cart-table__link">
-                          <div class="badge bg-blue">link</div>
+                          <a data-type="iframe" data-fancybox href="https://www.dev-manage-mii.uk/ecommerce?clientId=e927b68a-b06a-480a-b83a-e40b32e8b62a&brand=rosan diamond&model=money_clip&version=1" class="badge bg-blue">link <span class="mob-inline">card</span></a>
                         </td>
                         <td data-label="Price" class="cart-table__price">
                           <span>$<span class='js-tr-price'>120.00</span></span>
@@ -137,7 +137,7 @@
                           </div>
                         </td>
                         <td data-label="Link" class="cart-table__link">
-                          <div class="badge bg-green">linked</div>
+                          <a class="badge bg-green">linked</a>
                         </td>
                         <td data-label="Price" class="cart-table__price">
                           <span>$<span class='js-tr-price'>120.00</span></span>
@@ -167,7 +167,7 @@
                           </div>
                         </td>
                         <td data-label="Link" class="cart-table__link">
-                          <div class="badge bg-extraorange badge_small-text">not linked</div>
+                          <a class="badge bg-extraorange badge_small-text">not linked</a>
                         </td>
                         <td data-label="Price" class="cart-table__price">
                           <span>$<span class='js-tr-price'>120.00</span></span>
@@ -446,9 +446,9 @@
               </ul>
             </div>
             <div class="footer__col">
-              <h2 class="footer__title title-upper">Newsletter</h2>
-              <p>Sign up for Our Newsletter <br>& Promotions</p>
-              <div class="footer__form">
+              <h2 class="footer__title title-upper sm-hide">Newsletter</h2>
+              <p class="sm-hide">Sign up for Our Newsletter <br>& Promotions</p>
+              <div class="footer__form sm-hide">
                 <form action="/" class="signup-form validation">
                   <div class="input-group">
                     <input type="text" class="input-group__input" placeholder="Your email" data-validation="required email">

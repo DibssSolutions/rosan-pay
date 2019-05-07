@@ -4,6 +4,8 @@
   position: relative
   +sm
     padding: 14px 0
+  & + .samples
+    margin-top: 20px
   &__wrapper
     padding: 0 20px
     display: flex
@@ -29,11 +31,26 @@
       right: 101%
       min-height: 100vh
       min-width: 200px
-      padding: 147px 50px 40px 
+      padding: 50px 50px 40px 
       background-color: $white
       transition: transform $tr, box-shadow $tr
       .is-open &
         transform: translateX(101%)
+      &:before
+        position: absolute
+        content: ''
+        top: 0
+        bottom: 0
+        left: 100%
+        width: 100vw
+        pointer-events: none
+        opacity: 0
+        visibility: hidden
+        transition: opacity .3s, visibility .3s
+        background-color: rgba(#1e1e1e, .87)
+        .is-open &
+          opacity: 1
+          visibility: visible
   &__burger
     display: none
     position: relative
@@ -44,6 +61,8 @@
     padding: 0 60px 0 40px
     +sm 
       padding: 40px 0
+  &__search
+    font-size: 0
 
 
 .main-nav
@@ -104,6 +123,7 @@
   &__image
     display: block
     max-width: 100%
+    transform: scale(1.112)
     .logo_big &
       height: 35px
 
@@ -120,8 +140,9 @@
     .icon
       +icenter
       color: $white
-      font-size: 15px
+      font-size: 16px
       +sm 
+        font-size: 21px
         color: $text
   &__quantity
     text-align: center
